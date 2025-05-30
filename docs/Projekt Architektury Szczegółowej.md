@@ -28,7 +28,7 @@ System składa się z dwóch głównych części: aplikacji klienckiej działaj�
 ```mermaid
 graph LR
     subgraph Android Device
-        A[User Interface (UI)] --> B(Camera Module)
+        A(User Interface - UI) --> B(Camera Module)
         A --> C(Processing Module)
         A --> D(Playback Module)
         A --> E(Local Storage Mgmt)
