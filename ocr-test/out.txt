@@ -1,0 +1,1457 @@
+Google Cloud Vision Client initialized.
+AWS Textract Client initialized.
+Azure Computer Vision Client initialized.
+--- ROZPOCZĘCIE TESTÓW OCR ---
+Upewnij się, że skonfigurowano dostęp do API i podano poprawne ścieżki obrazów.
+-----------------------------
+
+Przetwarzanie pliku: pages/IMG_20250529_123947251.jpg
+--- Google Cloud Vision ---
+Atomowy
+1. Dotyczący atomów; bardzo niewielki; pojedyncza,
+niepodzielna jednostka większego systemu.
+2. Wykorzystujący energię jądrową jako źródło ogrom-
+nej mocy.
+Nawyk
+1. Przyzwyczajenie; czynność wykonywana w regu-
+larny sposób; automatyczna reakcja na konkretną
+sytuację.
+
+
+--- AWS Textract ---
+Atomowy
+1. Dotyczacy atomów; bardzo niewielki; pojedyncza,
+niepodzielna jednostka wiekszego systemu.
+2. Wykorzystujacy energie jadrowa jako ródto ogrom-
+nej mocy.
+Nawyk
+1. Przyzwyczajenie; czynnosc wykonywana W regu-
+larny sposób; automatyczna reakcja na konkretna
+sytuacje.
+
+
+--- Azure Computer Vision (Read API) ---
+Azure: Reading 'IMG_20250529_123947251.jpg', operation ID: 1698d0f2-aaab-4b44-bf5d-ec2eb5acb87d. Waiting...
+Atomowy
+1. Dotyczący atomów; bardzo niewielki; pojedyncza,
+niepodzielna jednostka większego systemu.
+2. Wykorzystujący energię jądrową jako źródło ogrom-
+nej mocy.
+Nawyk
+1. Przyzwyczajenie; czynność wykonywana w regu-
+larny sposób; automatyczna reakcja na konkretną
+sytuację.
+
+
+--------------------------------------------------
+Przetwarzanie pliku: pages/IMG_20250529_123953608.jpg
+--- Google Cloud Vision ---
+Wstęp: Moja historia
+Ostatniego dnia drugiego roku liceum oberwałem w twarz kijem base-
+ballowym. Kolega z klasy wziął potężny zamach, ale kij wyślizgnął mu
+się z rąk, poszybował w moją stronę i trafił mnie prosto między oczy. Nie
+pamiętam samej chwili uderzenia.
+Kij grzmotnął mnie w twarz z taką siłą, że złamał mi nos, nadając mu
+kształt nieforemnej litery U. Pod wpływem ciosu tkanka miękka mózgu
+uderzyła o kość czaszki. W jednej chwili przez głowę przetoczyła mi się
+przybierająca fala. W ułamku sekundy miałem złamany nos, kilka pęk-
+nięć czaszki i dwa zmiażdżone oczodoły.
+Kiedy otworzyłem oczy, ujrzałem, jak jedni mi się przypatrują, a inni
+biegną po pomoc. Spuściwszy głowę, zobaczyłem na ubraniu plamy
+czerwieni. Któryś z kolegów zdjął koszulkę i mi ją podał. Zatamowałem
+nią strumień płynącej z nosa krwi. Zszokowany i zdezorientowany nie
+zdawałem sobie sprawy z rozmiarów wypadku.
+Nauczyciel podparł mnie ramieniem i ruszyliśmy w długą drogę do ga-
+binetu lekarskiego: przez całe pole gry, w dół wzgórza, aż do szkoły. Czu-
+łem na bokach czyjeś ręce podtrzymujące mnie w pionie. Nie śpieszyliśmy
+się, szliśmy wolno. Nikt nie zdawał sobie sprawy, że liczy się każda minuta.
+Po przyjściu do gabinetu usłyszałem od pielęgniarki kilka pytań.
+Który mamy rok?
+-
+Tysiąc dziewięćset dziewięćdziesiąty ósmy - odpowiedziałem. Tak
+naprawdę był rok 2002.
+Kto jest prezydentem Stanów Zjednoczonych?
+11
+
+
+--- AWS Textract ---
+Wstep: Moja historia
+Ostatniego dnia drugiego roku liceum oberwalem W twarz kijem base-
+ballowym. Kolega Z klasy wzial potezny zamach, ale kij wyslizgnal mu
+sie Z rak, poszybowal W moja strone i trafil mnie prosto miedzy oczy. Nie
+pamietam samej chwili uderzenia.
+Kij grzmotnal mnie W twarz Z taka sita, ze zlamal mi nos, nadajac mu
+ksztalt nieforemnej litery U. Pod wplywem ciosu tkanka miekka mózgu
+uderzyla o kosc czaszki. W jednej chwili przez glowe przetoczyla mi sie
+przybierajaca fala. W ulamku sekundy mialem zlamany nos, kilka pek-
+niec czaszki i dwa zmiazdione oczodoly.
+Kiedy otworzylem oczy, ujrzalem, jak jedni mi sie przypatruja, a inni
+biegna po pomoc. Spusciwszy glowe, zobaczylem na ubraniu plamy
+czerwieni. Ktory's Z kolegow zdjal koszulke i mi ja podal. Zatamowalem
+nia strumier plynacej Z nosa krwi. Zszokowany i zdezorientowany nie
+zdawalem sobie sprawy Z rozmiarów wypadku.
+Nauczyciel podpart mnie ramieniem i ruszylismy W dluga droge do ga-
+binetu lekarskiego: przez cale pole gry, W dól wzgórza, az do szkoly. Czu-
+lem na bokach czyjes rece podtrzymujace mnie W pionie. Nie spieszylismy
+sie, szlismy wolno. Nikt nie zdawal sobie sprawy, ze liczy sie kazda minuta.
+Po przyjsciu do gabinetu uslyszalem od pielegniarki kilka pytañ.
+- Ktory mamy rok?
+- Tysiac dziewiecset dziewiecdziesiaty ósmy - odpowiedzialem. Tak
+naprawde byt rok 2002.
+- Kto jest prezydentem Stanów Zjednoczonych?
+11
+
+
+--- Azure Computer Vision (Read API) ---
+Azure: Reading 'IMG_20250529_123953608.jpg', operation ID: 6ca7c970-5159-443b-be77-cd2def680d5f. Waiting...
+Wstęp: Moja historia
+Ostatniego dnia drugiego roku liceum oberwałem w twarz kijem base-
+ballowym. Kolega z klasy wziął potężny zamach, ale kij wyślizgnął mu
+się z rąk, poszybował w moją stronę i trafił mnie prosto między oczy. Nie
+pamiętam samej chwili uderzenia.
+Kij grzmotnął mnie w twarz z taką siłą, że złamał mi nos, nadając mu
+kształt nieforemnej litery U. Pod wpływem ciosu tkanka miękka mózgu
+uderzyła o kość czaszki. W jednej chwili przez głowę przetoczyła mi się
+przybierająca fala. W ułamku sekundy miałem złamany nos, kilka pęk-
+nięć czaszki i dwa zmiażdżone oczodoły.
+Kiedy otworzyłem oczy, ujrzałem, jak jedni mi się przypatrują, a inni
+biegną po pomoc. Spuściwszy głowę, zobaczyłem na ubraniu plamy
+czerwieni. Któryś z kolegów zdjął koszulkę i mi ją podał. Zatamowałem
+nią strumień płynącej z nosa krwi. Zszokowany i zdezorientowany nie
+zdawałem sobie sprawy z rozmiarów wypadku.
+Nauczyciel podparł mnie ramieniem i ruszyliśmy w długą drogę do ga-
+binetu lekarskiego: przez całe pole gry, w dół wzgórza, aż do szkoły. Czu-
+łem na bokach czyjeś ręce podtrzymujące mnie w pionie. Nie śpieszyliśmy
+się, szliśmy wolno. Nikt nie zdawał sobie sprawy, że liczy się każda minuta.
+Po przyjściu do gabinetu usłyszałem od pielęgniarki kilka pytań.
+- Który mamy rok?
+- Tysiąc dziewięćset dziewięćdziesiąty ósmy - odpowiedziałem. Tak
+naprawdę był rok 2002.
+- Kto jest prezydentem Stanów Zjednoczonych?
+11
+
+
+--------------------------------------------------
+Przetwarzanie pliku: pages/IMG_20250529_123958364.jpg
+--- Google Cloud Vision ---
+to ów
+cję: na
+ją wy-
+cy na-
+życia
+kach,
+ycza-
+ary-
+ich.
+Ani-
+ego
+wy
+po-
+zę-
+ej,
+Wstęp: Moja historia | 17
+nie książki, którą właśnie czytasz. Powiększanie się mojego audytorium
+stwarzało nowe okazje do rozwijania biznesu. Znane firmy coraz częściej
+prosiły mnie o wygłoszenie prelekcji na temat przyswajania nawyków,
+zmieniania zachowań i ciągłego doskonalenia. Wkrótce zacząłem wystę-
+pować na konferencjach w Stanach Zjednoczonych i w Europie.
+e
+W 2016 roku moje artykuły zaczynały regularnie pojawiać się
+w dużych gazetach oraz magazynach, takich jak „Time",,,Entrepreneur"
+i „Forbes". To niezwykłe, ale tego roku z moimi publikacjami zapoznało
+się ponad osiem milionów ludzi. Zaczęli je czytać trenerzy NFL, NBA
+oraz MLB i dzielić się wskazówkami ze swymi zespołami.
+Na początku 2017 roku założyłem serwis Habits Academy, który prze-
+istoczył się w ważną platformę szkoleniową dla organizacji i osób indy-
+widualnych zainteresowanych nabieraniem lepszych nawyków w życiu
+i w pracy*. Firmy z listy Fortune 500 i rozwijające się start-upy zapisywa-
+ły na szkolenia swoich liderów i pracowników. Kursy w Habits Academy
+ukończyło łącznie ponad 10 tysięcy liderów, menedżerów, coachów i na-
+uczycieli, a dzięki pracy z nimi bardzo wiele dowiedziałem się o prak-
+tycznych aspektach działania nawyków.
+Gdy w 2018 roku kończyłem pisać tę książkę, stronę jamesclear.com
+odwiedzały miesięcznie miliony internautów, a mój cotygodniowy biu-
+letyn subskrybowało niemal 500 tysięcy osób - liczba tak przerastająca
+wszelkie moje oczekiwania z początku tego przedsięwzięcia, że nawet nie
+jestem pewien, co o tym myśleć.
+JAKIE KORZYŚCI ZACZERPNIESZ Z TEJ KSIĄŻKI
+Przedsiębiorca i inwestor Naval Ravikant powiedział: „Aby napisać do-
+brą książkę, trzeba samemu najpierw stać się książką". Opisane dalej kon-
+cepcje poznałem z autopsji. Musiałem bazować na drobnych nawykach,
+aby dojść do siebie po wypadku, wzmocnić się na siłowni, dawać świetne
+występy na boisku, zostać pisarzem, założyć prężnie działającą firmę i po
+prostu stać się odpowiedzialnym, dorosłym człowiekiem. Małe przyzwy-
+czajenia pomogły mi w wykorzystaniu swojego potencjału, a ponieważ
+sięgnąłeś po tę książkę, domyślam się, że tobie także na tym zależy.
+* Zainteresowani czytelnicy mogą zapoznać się z nią bliżej pod adresem habitsacademy.com.
+
+
+--- AWS Textract ---
+Wstep Moja historia
+17
+nie ksiazki, która wlasnie czytasz. Powiekszanie sie mojego audytorium
+stwarzato nowe okazje do rozwijania biznesu. Znane firmy coraz czesciej
+prosity mnie o wygloszenie prelekcji na temat przyswajania nawykow,
+zmieniania zachowan i ciaglego doskonalenia. Wkrótce zaczalem wyste-
+powac na konferencjach W Stanach Zjednoczonych i W Europie.
+W 2016 roku moje artykuly zaczynaly regularnie pojawiac sie
+W duzych gazetach oraz magazynach, takich jak "Time", "Entrepreneur"
+i "Forbes". To niezwykle, ale tego roku Z moimi publikacjami zapoznato
+sie ponad osiem milionów ludzi. Zaczeli je czytac trenerzy NFL, NBA
+oraz MLB i dzielió sie wskazówkami ze swymi zespolami.
+Na poczatku 2017 roku zalozylem serwis Habits Academy, ktory prze-
+istoczyl sie W wazna platforme szkoleniowa dla organizacji i osób indy-
+widualnych zainteresowanych nabieraniem lepszych nawykow W zyciu
+i W pracy*. Firmy Z listy Fortune 500 i rozwijajace sie start-upy zapisywa-
+ly na szkolenia swoich liderów i pracowników. Kursy W Habits Academy
+ukonczylo lacznie ponad 10 tysiecy liderów, menedzerów, coachów i na-
+uczycieli, a dzieki pracy Z nimi bardzo wiele dowiedzialem sie o prak-
+tycznych aspektach dzialania nawykow.
+Gdy W 2018 roku konczylem pisac te ksiazke, strone jamesclear.com
+odwiedzaly miesiecznie miliony internautów, a mój cotygodniowy biu-
+letyn subskrybowalo niemal 500 tysiecy osób liczba tak przerastajaca
+wszelkie moje oczekiwania Z poczatku tego przedsiewziecia, ze nawet nie
+jestem pewien, CO o tym myslec.
+JAKIE KORZYSCI ZACZERPNIESZ Z TEJ KSIAZKI
+Przedsiebiorca i inwestor Naval Ravikant powiedzial: "Aby napisac do-
+bra ksiazke, trzeba samemu najpierw stac sie ksiazka". Opisane dalej kon-
+cepcje poznalem Z autopsji. Musialem bazowac na drobnych nawykach,
+aby dojsc do siebie po wypadku, wzmocnió sie na silowni, dawac swietne
+wystepy na boisku, zostac pisarzem, zalozyó preznie dzialajaca firme i po
+prostu stac sie odpowiedzialnym, doroslym czlowiekiem. Male przyzwy-
+czajenia pomogly mi W wykorzystaniu swojego potencjalu, a poniewaz
+siegnates po te ksiazke, domyslam sie, ze tobie takze na tym zalezy.
+* Zainteresowani czytelnicy moga zapoznac sie Z nia blizej pod adresem habitsacademy.com.
+
+
+--- Azure Computer Vision (Read API) ---
+Azure: Reading 'IMG_20250529_123958364.jpg', operation ID: f0ee0fbf-409c-4ec5-9903-a66863f339f2. Waiting...
+to ów
+Wstęp: Moja historia
+17
+cję: na
+ją wy-
+nie książki, którą właśnie czytasz. Powiększanie się mojego audytorium
+cy na-
+stwarzało nowe okazje do rozwijania biznesu. Znane firmy coraz częściej
+życia.
+prosiły mnie o wygłoszenie prelekcji na temat przyswajania nawyków,
+kach,
+zmieniania zachowań i ciągłego doskonalenia. Wkrótce zacząłem wystę-
+pować na konferencjach w Stanach Zjednoczonych i w Europie.
+ycza-
+W 2016 roku moje artykuły zaczynały regularnie pojawiać się
+w dużych gazetach oraz magazynach, takich jak „Time“, „Entrepreneur“
+ary-
+i „Forbes". To niezwykłe, ale tego roku z moimi publikacjami zapoznało
+lich.
+się ponad osiem milionów ludzi. Zaczęli je czytać trenerzy NFL, NBA
+uni-
+oraz MLB i dzielić się wskazówkami ze swymi zespołami.
+ego
+Na początku 2017 roku założyłem serwis Habits Academy, który prze-
+wy
+istoczył się w ważną platformę szkoleniową dla organizacji i osób indy-
+0-
+widualnych zainteresowanych nabieraniem lepszych nawyków w życiu
+zę-
+i w pracy *. Firmy z listy Fortune 500 i rozwijające się start-upy zapisywa-
+ej,
+ły na szkolenia swoich liderów i pracowników. Kursy w Habits Academy
+ukończyło łącznie ponad 10 tysięcy liderów, menedżerów, coachów i na-
+uczycieli, a dzięki pracy z nimi bardzo wiele dowiedziałem się o prak-
+tycznych aspektach działania nawyków.
+Gdy w 2018 roku kończyłem pisać tę książkę, stronę jamesclear.com
+odwiedzały miesięcznie miliony internautów, a mój cotygodniowy biu-
+e
+letyn subskrybowało niemal 500 tysięcy osób - liczba tak przerastająca
+wszelkie moje oczekiwania z początku tego przedsięwzięcia, że nawet nie
+jestem pewien, co o tym myśleć.
+JAKIE KORZYŚCI ZACZERPNIESZ Z TEJ KSIĄŻKI
+Przedsiębiorca i inwestor Naval Ravikant powiedział: „Aby napisać do-
+brą książkę, trzeba samemu najpierw stać się książką". Opisane dalej kon-
+cepcje poznałem z autopsji. Musiałem bazować na drobnych nawykach,
+aby dojść do siebie po wypadku, wzmocnić się na siłowni, dawać świetne
+występy na boisku, zostać pisarzem, założyć prężnie działającą firmę i po
+prostu stać się odpowiedzialnym, dorosłym człowiekiem. Małe przyzwy-
+czajenia pomogły mi w wykorzystaniu swojego potencjału, a ponieważ
+sięgnąłeś po tę książkę, domyślam się, że tobie także na tym zależy.
+* Zainteresowani czytelnicy mogą zapoznać się z nią bliżej pod adresem habitsacademy.com.
+
+
+--------------------------------------------------
+Przetwarzanie pliku: pages/IMG_20250529_124025027.jpg
+--- Google Cloud Vision ---
+ybko, że efekt
+niem się na bok
+h posiadających
+ma chudziutk
+z rowerzysta-
+abilizować
+nier skonstru
+a
+No dobrze, ale dlaczego skręcanie kierownicą pozwala
+nam utrzymać równowagę na rowerze? Wyobraźmy sobie, że
+bierzemy kij od szczotki i stawiamy go pionowo na wyciągnię-
+tej dłoni. Co trzeba zrobić, żeby kij nie spadł? Wystarczy od-
+powiednio ruszać ręką! Za każdym razem, gdy kij nieco się
+wychyli z położenia równowagi, musimy natychmiast prze-
+sunąć rękę, aby z powrotem znalazła się pod kijem. Kij po-
+chyli się do przodu - przesuwamy rękę do przodu. Kij pochyli
+się w prawo - przesuwamy rękę w prawo. I tak dalej. Jeśli bę-
+dziemy reagować wystarczająco szybko - kij pozostanie w gó-
+rze, cały czas nad naszą ręką. Dokładnie to samo robi rowerzy-
+sta w trakcie jazdy rowerem! Gdy wraz z rowerem pochylą się
+w prawo, rowerzysta natychmiast skręca kierownicą w prawo,
+by rower z powrotem pod niego wjechał. Gdy wychylą się z po-
+łożenia równowagi nieco w lewo - kierownica skręcana jest
+w lewo. I rower znów wjeżdża pod rowerzystę, przywracając
+stan równowagi.
+ą parą kół wi
+m kierunku
+znikał, nato
+nowiło żad
+do stwier
+plikowany,
+sek stano-
+ywszy na
+obi.
+zacji ro-
+ując kie-
+ie zbyt
+dla sta-
+katne.
+chać
+Na
+Dlatego trudniej jedzie się rowerem bardzo powoli. Przy
+niewielkiej prędkości rower potrzebuje więcej czasu, by po
+skręceniu kierownicy wjechać pod rowerzystę. Wtedy może
+po prostu nie nadążać z wjeżdżaniem i trzeba skręcać coraz
+mocniej i gwałtowniej. Ot, i cała tajemnica.,,Fizyka" stabilno-
+ści roweru jest banalna.
+Można jeszcze zwrócić uwagę na kilka cech konstrukcyj-
+nych roweru, ułatwiających płynną, stabilną jazdę. Na przykład
+75
+ogi.
+
+
+--- AWS Textract ---
+No dobrze, ale dlaczego skrecanie kierownica pozwala
+nam utrzymac rownowage na rowerze? Wyobrazmy sobie, ze
+bierzemy kij od szczotki i stawiamy go pionowo na wyciagnie-
+tej dioni. Co trzeba zrobic, zeby kij nie spadt? Wystarczy od-
+powiednio ruszac reka! Za kazdym razem, gdy kij nieco sie
+wychyli Z polozenia równowagi, musimy natychmiast prze-
+sunac reke, aby Z powrotem znalazta sie pod kijem. Kij po-
+chyli sie do przodu - przesuwamy reke do przodu. Kij pochyli
+sie W prawo - przesuwamy reke W prawo. I tak dalej. Jesli be-
+dziemy reagowac wystarczajaco szybko - kij pozostanie W gó-
+rze, caly czas nad nasza reka. Dokladnie to samo robi rowerzy-
+sta W trakcie jazdy rowerem! Gdy wraz Z rowerem pochyla sie
+W prawo, rowerzysta natychmiast skreca kierownica W prawo,
+by rower Z powrotem pod niego wjechat. Gdy wychyla sie Z po-
+lozenia równowagi nieco W lewo - kierownica skrecana jest
+W lewo. I rower znow wjezdza pod rowerzyste, przywracajac
+stan równowagi.
+Dlatego trudniej jedzie sie rowerem bardzo powoli. Przy
+niewielkiej predkosci rower potrzebuje wiecej czasu, by po
+skreceniu kierownicy wjechac pod rowerzyste. Wtedy moze
+po prostu nie nadazac Z wjezdzaniem i trzeba skrecac coraz
+mocniej i gwaltowniej. Ot, i cala tajemnica. "Fizyka" stabilno-
+sci roweru jest banalna.
+Mozna jeszcze zwróció uwage na kilka cech konstrukcyj-
+nych roweru, ulatwiajacych plynna, stabilna jazde. Na przyklad
+75
+
+
+--- Azure Computer Vision (Read API) ---
+Azure: Reading 'IMG_20250529_124025027.jpg', operation ID: 8fbda1b9-8292-4fa0-8f75-e31d5d2b8616. Waiting...
+ybko, że efekt is
+niem się na boki
+h posiadających
+No dobrze, ale dlaczego skręcanie kierownicą pozwala
+ma chudziutkie
+nam utrzymać równowagę na rowerze? Wyobraźmy sobie, że
+z rowerzystą-
+bierzemy kij od szczotki i stawiamy go pionowo na wyciągnię-
+abilizować,
+tej dłoni. Co trzeba zrobić, żeby kij nie spadł? Wystarczy od-
+nier skonstru-
+powiednio ruszać ręką! Za każdym razem, gdy kij nieco się
+ą parą kół wi-
+wychyli z położenia równowagi, musimy natychmiast prze-
+sunąć rękę, aby z powrotem znalazła się pod kijem. Kij po-
+m kierunku
+chyli się do przodu - przesuwamy rękę do przodu. Kij pochyli
+znikał, nato-
+się w prawo - przesuwamy rękę w prawo. I tak dalej. Jeśli bę-
+nowiło żad-
+dziemy reagować wystarczająco szybko - kij pozostanie w gó-
+ę do stwier-
+rze, cały czas nad naszą ręką. Dokładnie to samo robi rowerzy-
+plikowany,
+sta w trakcie jazdy rowerem! Gdy wraz z rowerem pochylą się
+sek stano-
+w prawo, rowerzysta natychmiast skręca kierownicą w prawo,
+by rower z powrotem pod niego wjechał. Gdy wychylą się z po-
+ywszy na
+łożenia równowagi nieco w lewo - kierownica skręcana jest
+obi
+w lewo. I rower znów wjeżdża pod rowerzystę, przywracając
+zacji ro-
+stan równowagi.
+ując kie-
+Dlatego trudniej jedzie się rowerem bardzo powoli. Przy
+ie zbyt
+niewielkiej prędkości rower potrzebuje więcej czasu, by po
+dla sta-
+skręceniu kierownicy wjechać pod rowerzystę. Wtedy może
+katne.
+po prostu nie nadążać z wjeżdżaniem i trzeba skręcać coraz
+mocniej i gwałtowniej. Ot, i cała tajemnica. „Fizyka“ stabilno-
+ści roweru jest banalna.
+chać
+Można jeszcze zwrócić uwagę na kilka cech konstrukcyj-
+Na
+nych roweru, ułatwiających płynną, stabilną jazdę. Na przykład
+ogi.
+75
+
+
+--------------------------------------------------
+Przetwarzanie pliku: pages/IMG_20250529_124037614.jpg
+--- Google Cloud Vision ---
+większej prędkości, bo koła kręcą się na tyle szybko, że efekt ży-
+roskopowy powstrzymuje rower przed pochylaniem się na boki.
+Efekt ten rzeczywiście jest istotny w motocyklach posiadających
+masywne koła. Ale w przypadku roweru, który ma chudziutkie
+kółka - dużo lżejsze niż cała reszta roweru wraz z rowerzystą -
+efekt żyroskopowy jest zbyt słaby, żeby całość ustabilizować.
+nam u
+bierzen
+tej dłon
+powied
+wychyli
+sunąć rę
+chyli się
+się w pra
+dziemy re
+rze, cały c
+sta w trako
+w prawo, r
+by rower z
+łożenia rów
+w lewo. I ro
+stan równow
+By rozwiać wszelkie wątpliwości, pewien inżynier skonstru-
+ował dość osobliwy rower z doczepioną dodatkową parą kół wi-
+szących w powietrzu i kręcących się w przeciwnym kierunku.
+Dla takiego roweru efekt żyroskopowy zupełnie znikał, nato-
+miast utrzymanie równowagi w czasie jazdy nie stanowiło żad-
+nego problemu. W tej sytuacji niektórzy posunęli się do stwier-
+dzenia, że problem stabilności roweru jest na tyle skomplikowany,
+że nikt w ogóle nie zna jego rozwiązania! Taki wniosek stano-
+wiłby niezłą kompromitację dla naszego gatunku, zważywszy na
+to, że prawie każdy potrafi jeździć rowerem i często to robi.
+Na szczęście to tylko gadanie. Mechanizm stabilizacji ro-
+weru jest zupełnie banalny. Najłatwiej go odkryć, blokując kie-
+rownicę. Rower z zablokowaną kierownicą nie ujedzie zbyt
+daleko, bo natychmiast się wywali. A zatem kluczowe dla sta-
+bilizacji roweru jest ciągłe skręcanie. Nawet bardzo delikatne.
+Ślady roweru pozostawione na piasku nigdy nie są proste.
+Polecam założyć się z kimś o to, że nie uda mu się ujechać
+rowerem nawet stu metrów, nie zjeżdżając z prostej linii. Na
+przykład linii ciągłej namalowanej na środku asfaltowej drogi.
+74
+Dlatego t
+niewielkiej
+skręceniu ki
+po prostu ni
+mocniej i gwa
+ści roweru jes
+Można jes
+nych roweru,
+
+
+--- AWS Textract ---
+wiekszej predkosci, bo kola kreca sie na tyle szybko, ze efekt zy-
+roskopowy powstrzymuje rower przed pochylaniem sie na boki
+Efekt ten rzeczywiscie jest istotny W motocyklach posiadajacych
+masywne kola. Ale W przypadku roweru, ktory ma chudziutkie
+tej
+kólka - duzo lzejsze niz cala reszta roweru wraz Z rowerzysta -
+powied:
+efekt zyroskopowy jest zbyt staby, eby calosé ustabilizowac.
+By rozwiac wszelkie watpliwosci, pewien inzynier skonstru-
+sunac
+owal dosc osobliwy rower Z doczepiona dodatkowa para kól wi-
+chyli
+sie
+szacych W powietrzu i krecacych sie W przeciwnym kierunku.
+sie W pra
+Dla takiego roweru efekt zyroskopowy zupelnie znikal, nato-
+dziemy
+miast utrzymanie równowagi W czasie jazdy nie stanowito zad-
+rze,
+caly
+nego problemu. W tej sytuacji niektórzy posuneli sie do stwier-
+sta W trak
+dzenia, ze problem stabilnosci roweru jest na tyle skomplikowany,
+W prawo,
+ze nikt W ogóle nie zna jego rozwiazania! Taki wniosek stano-
+by rower
+wilby niezla kompromitacje dla naszego gatunku, zwazywszy na
+lozenia
+to, ze prawie kazdy potrafi jezdzió rowerem i czesto to robi.
+W
+lewo.
+I
+r
+Na szczescie to tylko gadanie. Mechanizm stabilizacji ro-
+stan
+równo
+weru jest zupelnie banalny. Najlatwiej go odkryé, blokujac kie-
+Dlatego
+rownice. Rower Z zablokowana kierownica nie ujedzie zbyt
+daleko, bo natychmiast sie wywali. A zatem kluczowe dla sta-
+niewielkiej
+skreceniu
+bilizacji roweru jest ciagle skrecanie. Nawet bardzo delikatne.
+PO
+Slady roweru pozostawione na piasku nigdy nie sa proste.
+Polecam zalozyé sie Z kims o to, ze nie uda mu sie ujechac
+rowerem nawet stu metrów, nie zjezdzajac Z prostej linii.
+Na
+przyklad linii ciaglej namalowanej na srodku asfaltowej drogi.
+74
+
+
+--- Azure Computer Vision (Read API) ---
+Azure: Reading 'IMG_20250529_124037614.jpg', operation ID: 6b5ab2e8-9ce5-497e-bafe-e5efa2a51b98. Waiting...
+większej prędkości, bo koła kręcą się na tyle szybko, że efekt ży-
+nam
+roskopowy powstrzymuje rower przed pochylaniem się na boki.
+bierzer
+Efekt ten rzeczywiście jest istotny w motocyklach posiadających
+masywne koła. Ale w przypadku roweru, który ma chudziutkie
+tej dłon
+kółka - dużo lżejsze niż cała reszta roweru wraz z rowerzystą -
+powied
+efekt żyroskopowy jest zbyt słaby, żeby całość ustabilizować.
+wychyli
+By rozwiać wszelkie wątpliwości, pewien inżynier skonstru-
+sunąć rę
+ował dość osobliwy rower z doczepioną dodatkową parą kół wi-
+chyli się
+szących w powietrzu i kręcących się w przeciwnym kierunku.
+się w pra
+Dla takiego roweru efekt żyroskopowy zupełnie znikał, nato-
+dziemy re
+miast utrzymanie równowagi w czasie jazdy nie stanowiło żad-
+nego problemu. W tej sytuacji niektórzy posunęli się do stwier-
+rze, cały c
+dzenia, że problem stabilności roweru jest na tyle skomplikowany,
+sta w trak
+że nikt w ogóle nie zna jego rozwiązania! Taki wniosek stano-
+w prawo, r
+wiłby niezłą kompromitację dla naszego gatunku, zważywszy na
+by rower z
+to, że prawie każdy potrafi jeździć rowerem i często to robi.
+łożenia róv
+Na szczęście to tylko gadanie. Mechanizm stabilizacji ro-
+w lewo. I r
+weru jest zupełnie banalny. Najłatwiej go odkryć, blokując kie-
+stan równo
+rownicę. Rower z zablokowaną kierownicą nie ujedzie zbyt
+Dlatego
+daleko, bo natychmiast się wywali. A zatem kluczowe dla sta-
+niewielkiej
+bilizacji roweru jest ciągłe skręcanie. Nawet bardzo delikatne.
+skręceniu ki
+Ślady roweru pozostawione na piasku nigdy nie są proste.
+po prostu ni
+Polecam założyć się z kimś o to, że nie uda mu się ujechać
+mocniej i gw
+ści roweru je
+rowerem nawet stu metrów, nie zjeżdżając z prostej linii. Na
+przykład linii ciągłej namalowanej na środku asfaltowej drogi.
+Można jes
+nych roweru,
+74
+
+
+--------------------------------------------------
+Przetwarzanie pliku: pages/IMG_20250529_124044654.jpg
+--- Google Cloud Vision ---
+wagę, że po
+e równania
+owicie
+rów
+pewien ka
+t uderza-
+dkość V
+W rów
+A kąta,
+zorach
+znaku
+Min-
+nktu
+niby
+rwa-
+edy-
+gły
+X
+0-
+może być w istocie ujęte matematycznie jako pewien specyficzny
+obrót owej czasoprzestrzeni. Ze względu na różnicę w znakach
+pojawiających się w równaniach, ten dość nietypowy obrót na-
+zywany jest obrotem hiperbolicznym. Ale ma on wiele właściwo-
+ści najzwyklejszych obrotów znanych z codziennego życia. A co
+jest najciekawsze w tej obserwacji poza tym, że brzmi ona dość
+nieprawdopodobnie? Otóż to, że jeśli zacisnąć zęby i przyjąć ją
+za punkt wyjścia, to prawie wszystkie wnioski płynące z teorii
+względności stają się wręcz banalne!
+Zapomnijmy na moment o teorii względności i wyobraźmy
+sobie, że trzymamy w ręku kij. Każdy kij ma dwa końce (ale
+proca ma trzy). Czy oba końce kija są równo oddalone? Chwila
+na zastanowienie. No cóż, nasze pytanie nie ma sensu. To tak,
+jakby zapytać: czym się różni wróbelek? Aby nadać pytaniu
+sens, trzeba najpierw doprecyzować: od czego mają być równo
+oddalone końce naszego kija? No bo mogą one być równo od-
+dalone od czyjegoś lewego oka, ale wówczas od prawej pięty
+już raczej nie. Wystarczy obrócić kij i sytuacja ulega zmianie.
+Jeżeli ruch rzeczywiście jest pewnym obrotem czasoprze-
+strzeni, to pytanie, czy dwa zdarzenia są równoczesne czy
+nie, jest tak samo pozbawione sensu jak pytanie, czy dwa
+końce kija są równo oddalone! Musimy najpierw sprecyzować,
+względem którego obserwatora.
+Według jednego obserwatora najpierw było jajko, a po-
+tem kura, a dla innego obserwatora, tego poruszającego się,
+h,
+29
+
+
+--- AWS Textract ---
+moze byc W istocie ujete matematycznie jako pewien specyficzny
+obrot owej czasoprzestrzeni. Ze wzgledu na róznice W znakach
+pojawiajacych sie W rownaniach, ten dosé nietypowy obrót na-
+zywany jest obrotem hiperbolicznym. Ale ma on wiele wlasciwo-
+sci najzwyklejszych obrotów znanych Z codziennego zycia. A CO
+jest najciekawsze W tej obserwacji poza tym, ze brzmi ona dosc
+nieprawdopodobnie? Otoz to, ze jesli zacisnac zeby i przyjac ja
+za punkt wyjscia, to prawie wszystkie wnioski plynace Z teorii
+wzglednosci staja sie wrecz banalne!
+Zapomnijmy na moment o teorii wzglednosci i wyobrazmy
+sobie, ze trzymamy W reku kij. Kazdy kij ma dwa konce (ale
+proca ma trzy). Czy oba konce kija sa równo oddalone? Chwila
+na zastanowienie. No có, nasze pytanie nie ma sensu. To tak,
+jakby zapytac: czym sie rózni wróbelek? Aby nadac pytaniu
+sens, trzeba najpierw doprecyzowac: od czego maja byé równo
+oddalone konce naszego kija? No bo moga one byé równo od-
+dalone od czyjegos lewego oka, ale wowczas od prawej piety
+juz raczej nie. Wystarczy obróció kij i sytuacja ulega zmianie.
+Jezeli ruch rzeczywiscie jest pewnym obrotem czasoprze-
+strzeni, to pytanie, czy dwa zdarzenia sa równoczesne czy
+nie, jest tak samo pozbawione sensu jak pytanie, czy dwa
+konce kija sa równo oddalone! Musimy najpierw sprecyzowac,
+wzgledem którego obserwatora.
+Wedlug jednego obserwatora najpierw bylo jajko, a po-
+tem kura, a dla innego obserwatora, tego poruszajacego sie,
+29
+
+
+--- Azure Computer Vision (Read API) ---
+Azure: Reading 'IMG_20250529_124044654.jpg', operation ID: 50c4c718-8b8f-4708-8fc6-7d05da618062. Waiting...
+Nage, że po-
+e równania
+owicie rów-
+może być w istocie ujęte matematycznie jako pewien specyficzny
+ewien kąt
+obrót owej czasoprzestrzeni. Ze względu na różnicę w znakach
+pojawiających się w równaniach, ten dość nietypowy obrót na-
+zywany jest obrotem hiperbolicznym. Ale ma on wiele właściwo-
+ści najzwyklejszych obrotów znanych z codziennego życia. A co
+jest najciekawsze w tej obserwacji poza tym, że brzmi ona dość
+nieprawdopodobnie? Otóż to, że jeśli zacisnąć zęby i przyjąć ją
+za punkt wyjścia, to prawie wszystkie wnioski płynące z teorii
+t uderza-
+względności stają się wręcz banalne!
+dkość V
+Zapomnijmy na moment o teorii względności i wyobraźmy
+w rów-
+sobie, że trzymamy w ręku kij. Każdy kij ma dwa końce (ale
+A kąta,
+proca ma trzy). Czy oba końce kija są równo oddalone? Chwila
+na zastanowienie. No cóż, nasze pytanie nie ma sensu. To tak,
+zorach
+jakby zapytać: czym się różni wróbelek? Aby nadać pytaniu
+znaku
+sens, trzeba najpierw doprecyzować: od czego mają być równo
+Min-
+oddalone końce naszego kija? No bo mogą one być równo od-
+nktu
+dalone od czyjegoś lewego oka, ale wówczas od prawej pięty
+niby
+już raczej nie. Wystarczy obrócić kij i sytuacja ulega zmianie.
+rwa-
+Jeżeli ruch rzeczywiście jest pewnym obrotem czasoprze-
+strzeni, to pytanie, czy dwa zdarzenia są równoczesne czy
+dy-
+nie, jest tak samo pozbawione sensu jak pytanie, czy dwa
+gły
+końce kija są równo oddalone! Musimy najpierw sprecyzować,
+względem którego obserwatora.
+x
+Według jednego obserwatora najpierw było jajko, a po-
+0
+tem kura, a dla innego obserwatora, tego poruszającego się,
+h,
+29
+
+
+--------------------------------------------------
+Przetwarzanie pliku: pages/IMG_20250529_124051374.jpg
+--- Google Cloud Vision ---
+wyższe równania do złudzenia przypominają inne równania.
+znane z elementarnej szkolnej geometrii. A mianowicie rów
+nania opisujące obrót układu współrzędnych o pewien kąt,
+Powróćmy do Minkowskiego. Zwrócił on uwagę, że po-
+które wyglądają tak:
+x' = x-At
+√1+A2
+t' = t+Ax
+√1+A2
+Wystarczy zerknąć i porównać - podobieństwo jest uderza-
+jące! Różnica między równaniami jest tylko taka, że prędkość V
+obserwatora (zapisana jako ułamek prędkości światła) w rów-
+naniach teorii względności jest zastąpiona tangensem A kąta,
+o który obrócony jest układ współrzędnych. Jest też we wzorach
+inna subtelna modyfikacja: w trzech miejscach, zamiast znaku
+minus, znajduje się znak plus. Ta obserwacja nie dawała Min-
+kowskiemu spokoju. Czyżby ruch z matematycznego punktu
+widzenia był po prostu pewnym rodzajem... obrotu? Ale niby
+obrotem czego?! Pytanie to wymagało z pewnością oderwa-
+nia się intelektualnie od żucia gumy.
+Problem postawiony został dość abstrakcyjnie, więc jedy-
+nymi obiektami, które pojawiły się w rozważaniach i mogły
+w trakcie ruchu podlegać obrotowi, były czas t i przestrzeń x
+występujące w równaniach! Minkowski wprowadził więc po-
+jęcie czasoprzestrzeni i ogłosił, że to, co odczuwamy jako ruch,
+28
+
+
+--- AWS Textract ---
+Powrócmy do Minkowskiego. Zwrócit on uwage, ze
+Po.
+wysze rownania do zludzenia przypominaja inne równania
+znane Z elementarnej szkolnej geometrii. A mianowicie rów
+nania opisujace obrót ukladu wspólrzednych o pewien kat,
+które wygladaja tak:
+x'
+x-At
+=
+t'=
+t+Ax
+=
+VI+A2
+V1+A2
+Wystarczy zerknac i porówna - podobierstwo jest uderza-
+jace! Róznica miedzy równaniami jest tylko taka, ze predkosc V
+obserwatora (zapisana jako ulamek predkosci swiatla) W rów-
+naniach teorii wzglednosci jest zastapiona tangensem A kata,
+o ktory obrócony jest uklad wspólrzednych. Jest tez we wzorach
+inna subtelna modyfikacja: W trzech miejscach, zamiast znaku
+minus, znajduje sie znak plus. Ta obserwacja nie dawala Min-
+kowskiemu spokoju. Czyby ruch Z matematycznego punktu
+widzenia byb po prostu pewnym rodzajem... obrotu? Ale
+obrotem niby
+czego?! Pytanie to wymagalo Z pewnoscia oderwa-
+nia sie intelektualnie od zucia gumy.
+Problem postawiony zostal dosé abstrakcyjnie, wiec jedy-
+nymi obiektami, które pojawily sie W rozwazaniach i mogly
+W trakcie ruchu podlegac obrotowi, byly czas t i
+wystepujace W wprowadzit wiec
+jecie to, CO jako
+czasoprzestrzeni równaniach! i oglosit, Minkowski ze odczuwamy przestrzen ruch, po- x
+28
+
+
+--- Azure Computer Vision (Read API) ---
+Azure: Reading 'IMG_20250529_124051374.jpg', operation ID: 477a3283-726a-4d04-b518-776726ed5760. Waiting...
+Powróćmy do Minkowskiego. Zwrócił on uwagę, że po-
+wyższe równania do złudzenia przypominają inne równania,
+znane z elementarnej szkolnej geometrii. A mianowicie rów-
+nania opisujące obrót układu współrzędnych o pewien kąt,
+które wyglądają tak:
+d' = x-At
+VI+A2
+t' = t+Ax
+V1+A2
+Wystarczy zerknąć i porównać - podobieństwo jest uderza-
+jące! Różnica między równaniami jest tylko taka, że prędkość V
+obserwatora (zapisana jako ułamek prędkości światła) w rów-
+naniach teorii względności jest zastąpiona tangensem A kąta,
+o który obrócony jest układ współrzędnych. Jest też we wzorach
+inna subtelna modyfikacja: w trzech miejscach, zamiast znaku
+minus, znajduje się znak plus. Ta obserwacja nie dawała Min-
+kowskiemu spokoju. Czyżby ruch z matematycznego punktu
+widzenia był po prostu pewnym rodzajem ... obrotu? Ale niby
+obrotem czego ?! Pytanie to wymagało z pewnością oderwa-
+nia się intelektualnie od żucia gumy.
+Problem postawiony został dość abstrakcyjnie, więc jedy-
+nymi obiektami, które pojawiły się w rozważaniach i mogły
+w trakcie ruchu podlegać obrotowi, były czas t i przestrzeń x
+występujące w równaniach! Minkowski wprowadził więc po-
+jęcie czasoprzestrzeni i ogłosił, że to, co odczuwamy jako ruch,
+28
+
+
+--------------------------------------------------
+Przetwarzanie pliku: pages/IMG_20250529_124153543.jpg
+--- Google Cloud Vision ---
+5000
+3
+Budowa i obsługa jachtu
+3.1. Charakterystyka
+i podział jachtów żaglowych
+Jacht to jednostka pływająca, służąca
+wyłącznie do celów sportowych i tury-
+stycznych. Zwyczajowo małe jachty ża-
+glowe określa się mianem łodzi żaglo-
+wej lub jolki.
+-
+Ze względu na kryterium głównego
+źródła napędu wyróżnia się:
+jachty żaglowe,
+jachty motorowe,
+jachty żaglowo-motorowe,
+- jachty motorowo-żaglowe.
+Za jacht żaglowy uważa się taki, któ-
+rego głównym źródłem napędu są żagle,
+natomiast za jacht motorowy taki, które-
+go głównym źródłem napędu jest silnik.
+Główny rodzaj napędu to taki, przy
+którego użyciu jacht jest w stanie upra-
+wiać żeglugę i wykonywać wszystkie
+niezbędne do tego celu manewry na
+akwenach i w warunkach atmosferycz-
+nych określonych w dokumentach bez-
+pieczeństwa jachtu.
+Biorąc pod uwagę przeznaczenie
+jachtów, podzielić je można na:
+-
+jachty turystyczne,
+jachty regatowe,
+jachty turystyczno-regatowe,
+jachty szkoleniowe.
+Rodzaj stateczności
+poprzecznej
+daje podstawę do podziału jachtów ża-
+glowych na:
+-
+- jachty o stateczności kształtu i cięża-
+ru (jachty balastowo-mieczowe).
+Jachty żaglowe dzieli się na typy
+i klasy, zależnie od wielkości i budo-
+wy. Jachty grupuje się tak, aby w miarę
+możliwości wyrównać ich szanse w re-
+gatach. W klasach otwartych jest tylko
+kilka parametrów wspólnych dla jach-
+tów. Zazwyczaj są to typ i powierzchnia
+ożaglowania jachtu. Natomiast w kla-
+sach ograniczonych jachty muszą mieć
+już kilkanaście cech wspólnych.
+Klasy monotypowe obejmują jach-
+ty o jednakowych parametrach, czę-
+sto z wymogiem identyczności mate-
+riałów, z których są zbudowane. W re-
+gatach klas niemonotypowych stosuje
+się formuły wyrównawcze (pomiarowe),
+umożliwiające otrzymanie porównywal-
+nych wyników.
+Jachty żaglowe różnią się między
+sobą szeregiem właściwości fizycz-
+nych, takich jak:
+-
+-
+-
+stateczność poprzeczna i podłużna –
+równowaga,
+sprawność aerodynamiczna ożaglo-
+wania
+sprawność hydrodynamiczna kadłuba,
+sterowność - stateczność kierunkowa,
+zdolność do suchego
+dzielność
+-
+chodzenia na fali,
+zdolność żeglugowa - bezpieczne prze-
+trwanie w warunkach ciężkiej pogody,
+jachty o stateczności kształtu (jachty - wyporność
+mieczowe),
+jachty o stateczności ciężaru (jachty
+balastowe),
+- masa wody wypierana
+przez jacht zanurzony do konstruk-
+cyjnej linii wodnej, równa jego masie
+całkowitej.
+
+
+--- AWS Textract ---
+3
+Budowa i obstuga jachtu
+3.1. Charakterystyka
+- jachty o statecznosci ksztaltu i cieza-
+i podzial jachtów zaglowych
+ru (jachty balastowo-mieczowe).
+Jacht to jednostka ptywajaca, stuzaca
+Jachty zaglowe dzieli sie na typy
+wylacznie do celów sportowych i tury-
+i klasy, zaleznie od wielkosci i budo-
+stycznych. Zwyczajowo mate jachty -
+wy. Jachty grupuje sie tak, aby W miare
+glowe okresla sie mianem todzi zaglo-
+mozliwosci wyrówna ich szanse W re-
+wej lub jolki.
+gatach. W klasach otwartych jest tylko
+Ze wzgledu na kryterium glównego
+kilka parametrów wspólnych dla jach-
+>ródla napedu wyróznia sie:
+tów. Zazwyczaj sa to typ i powierzchnia
+- jachty zaglowe,
+ozaglowania jachtu. Natomiast W kla-
+- jachty motorowe,
+sach ograniczonych jachty musza miec
+- jachty zaglowo-motorowe,
+juz kilkanascie cech wspólnych.
+- jachty motorowo-zaglowe.
+Klasy monotypowe obejmuja jach-
+Za jacht zaglowy uwaza sie taki, któ-
+ty o jednakowych parametrach, cze-
+rego glównym ródlem napedu sa zagle,
+sto Z wymogiem identycznosci mate-
+natomiast za jacht motorowy taki, które-
+rialów, Z ktorych sa zbudowane. W re-
+go glównym ródtem napedu jest silnik.
+gatach klas niemonotypowych stosuje
+Glówny rodzaj napedu to taki, przy
+sie formuly wyrównawcze (pomiarowe),
+którego uzyciu jacht jest W stanie upra-
+umozliwiajace otrzymanie porównywal-
+wiac zegluge i wykonywac wszystkie
+nych wyników.
+niezbedne do tego celu manewry na
+Jachty zaglowe róznia sie miedzy
+akwenach i W warunkach atmosferycz-
+soba szeregiem wlasciwosci fizycz-
+nych okreslonych W dokumentach bez-
+nych, takich jak:
+pieczenstwa jachtu.
+- statecznosc poprzeczna i podluzna -
+Biorac pod uwage przeznaczenie
+równowaga,
+jachtów, podzielió je mozna na:
+- sprawnosé aerodynamiczna ozaglo-
+- jachty turystyczne,
+wania
+- jachty regatowe,
+- sprawnosó hydrodynamiczna kadluba,
+- jachty turystyczno-regatowe,
+- sterownosc - statecznosc kierunkowa,
+- jachty szkoleniowe.
+- dzielnosc - zdolnosc do suchego
+Rodzaj statecznosci poprzecznej
+chodzenia na fali,
+daje podstawe do podziatu jachtów a-
+- zdolnosc zeglugowa-bezpieczne - prze-
+glowych na:
+trwanie W warunkach ciezkiej pogody,
+- jachty o statecznosci ksztaltu (jachty
+- wypornosc - masa wody wypierana
+mieczowe),
+przez jacht zanurzony do konstruk-
+- jachty o statecznosci ciezaru (jachty
+cyjnej linii wodnej, równa jego masie
+balastowe),
+calkowitej.
+
+
+--- Azure Computer Vision (Read API) ---
+Azure: Reading 'IMG_20250529_124153543.jpg', operation ID: 3ad52a8d-2aa0-45e6-b55a-fdd845407a31. Waiting...
+5000
+3
+Budowa i obsługa jachtu
+3.1. Charakterystyka
+i podział jachtów żaglowych
+-
+jachty o stateczności kształtu i cięża-
+ru (jachty balastowo-mieczowe).
+Jacht to jednostka pływająca, służąca
+Jachty żaglowe dzieli się na typy
+wyłącznie do celów sportowych i tury-
+i klasy, zależnie od wielkości i budo-
+stycznych. Zwyczajowo małe jachty ża-
+wy. Jachty grupuje się tak, aby w miarę
+glowe określa się mianem łodzi żaglo-
+możliwości wyrównać ich szanse w re-
+wej lub jolki.
+gatach. W klasach otwartych jest tylko
+Ze względu na kryterium głównego
+kilka parametrów wspólnych dla jach-
+źródła napędu wyróżnia się:
+tów. Zazwyczaj są to typ i powierzchnia
+- jachty żaglowe,
+ożaglowania jachtu. Natomiast w kla-
+jachty motorowe,
+sach ograniczonych jachty muszą mieć
+· jachty żaglowo-motorowe,
+już kilkanaście cech wspólnych.
+- jachty motorowo-żaglowe.
+Klasy monotypowe obejmują jach-
+Za jacht żaglowy uważa się taki, któ-
+ty o jednakowych parametrach, czę-
+rego głównym źródłem napędu są żagle,
+sto z wymogiem identyczności mate-
+natomiast za jacht motorowy taki, które-
+riałów, z których są zbudowane. W re-
+go głównym źródłem napędu jest silnik.
+gatach klas niemonotypowych stosuje
+Główny rodzaj napędu to taki, przy
+się formuły wyrównawcze (pomiarowe),
+którego użyciu jacht jest w stanie upra-
+umożliwiające otrzymanie porównywal-
+wiać żeglugę i wykonywać wszystkie
+nych wyników.
+niezbędne do tego celu manewry na
+Jachty żaglowe różnią się między
+akwenach i w warunkach atmosferycz-
+sobą szeregiem właściwości fizycz-
+nych określonych w dokumentach bez-
+nych, takich jak:
+pieczeństwa jachtu.
+- stateczność poprzeczna i podłużna -
+Biorąc pod uwagę przeznaczenie
+równowaga,
+jachtów, podzielić je można na:
+sprawność aerodynamiczna ożaglo-
+- jachty turystyczne,
+wania
+· jachty regatowe,
+sprawność hydrodynamiczna kadłuba,
+- jachty turystyczno-regatowe,
+sterowność - stateczność kierunkowa,
+- jachty szkoleniowe.
+-
+dzielność - zdolność do suchego
+Rodzaj stateczności poprzecznej
+chodzenia na fali,
+daje podstawę do podziału jachtów ża-
+- zdolność żeglugowa - bezpieczne prze-
+glowych na:
+trwanie w warunkach ciężkiej pogody,
+- jachty o stateczności kształtu (jachty
+- wyporność - masa wody wypierana
+mieczowe),
+przez jacht zanurzony do konstruk-
+· jachty o stateczności ciężaru (jachty
+cyjnej linii wodnej, równa jego masie
+balastowe),
+całkowitej.
+
+
+--------------------------------------------------
+Przetwarzanie pliku: pages/IMG_20250529_124158664.jpg
+--- Google Cloud Vision ---
+30
+Żeglarz jachtowy i jachtowy sternik morski
+Geometrie kształtu kadłuba przed- regiem płaszczyzn równoległych do pio-
+stawia konstruktor na rysunku konstruk-
+cyjnym, na którym pokazane są prze-
+kroje kadłuba i jego linie konstrukcyj-
+ne w trzech podstawowych rzutach
+nowej płaszczyzny symetrii przechodzą
+cej wzdłuż przez środek jego szerokości
+Rzut poziomy kadłuba (półszerz) -
+(rys. 3.1). Na rzucie bocznym kadłuba przecięcie zewnętrznej powierzchni ka-
+przedstawiona jest konstrukcyjna linia dłuba poziomymi płaszczyznami równo-
+wodna - KLW (wodnica konstrukcyj- ległymi do płaszczyzny konstrukcyjnej
+linii wodnej, dzielącej jego część nad-
+wodną i podwodną, pokrywającą się
+na - WK). Jest to linia wyznaczona na
+powierzchni kadłuba jachtu. Położona
+jest na poziomej płaszczyźnie odpowia- z powierzchnią swobodnej wody, przy
+dającej powierzchni, do której zanurzo-
+ny jest kadłub jachtu. Płaszczyzna kon-
+strukcyjnej linii wodnej dzieli kadłub na
+część nawodną i podwodną.
+Rzut boczny kadłuba (bok) - przecię
+cie zewnętrznej powierzchni kadłuba sze-
+RZUT BOCZNY (BOK)
+obciążonym jachcie.
+Rzut poprzeczny kadłuba (owręże-
+nie) - przecięcie zewnętrznej powierzch-
+ni kadłuba równoległymi płaszczyznami
+do płaszczyzny owręża (obrys przekroju
+poprzecznego kadłuba jachtu w połowie
+RZUT POPRZECZNY (OWRĘZENIE)
+wodnice
+wrężnice owręże KLW
+wzdłużnice
+wodnice
+wrężnice
+KLW
+ukośnice
+RZUT POZIOMY (POŁSZERZ)
+wzdłużnice
+KLW
+B
+12
+ukośnice
+12
+1 B.
+B
+B
+Bc
+KLW
+wrężnice
+wzdłużnice
+Rys. 3.1. Linie teoretyczne kadłuba jachtu: B - szerokość całkowita, BKLW - największa szerokość
+w płaszczyźnie konstrukcyjnej linii wodnej, KLW - konstrukcyjna linia wodna, L- długość całkowita,
+LKLW - największa długość w płaszczyźnie konstrukcyjnej linii wodnej, T- zanurzenie całkowite.
+
+
+--- AWS Textract ---
+30
+Zeglarz jachtowy i jachtowy sternik morski
+Geometrie ksztaltu kadluba przed-
+regiem plaszczyzn równoleglych do
+stawia konstruktor na rysunku konstruk-
+nowej plaszczyzny symetrii przechodza. pio-
+cyjnym, na którym pokazane sa prze-
+cej wzdluz przez srodek jego szerokosci
+kroje kadluba i jego linie konstrukcyj-
+ne W trzech podstawowych rzutach
+Rzut poziomy kadluba (pólszerz)
+(rys. 3.1). Na rzucie bocznym kadluba
+przeciecie zewnetrznej powierzchni ka-
+przedstawiona jest konstrukcyjna linia
+dluba poziomymi plaszczyznami równo
+wodna - KLW (wodnica konstrukcyj-
+leglymi do plaszczyzny konstrukcyjne
+na - WK). Jest to linia wyznaczona na
+linii wodnej, dzielacej jego czesc nad-
+powierzchni kadtuba jachtu. Polozona
+wodna i podwodna, pokrywajaca sie
+jest na poziomej plaszczyznie odpowia-
+Z powierzchnia swobodnej wody, przy
+dajacej powierzchni, do ktorej zanurzo-
+obciazonym jachcie.
+ny jest kadlub jachtu. Plaszczyzna kon-
+strukcyjnej linii wodnej dzieli kadlub na
+Rzut poprzeczny kadluba (owreze-
+czesc nawodna i podwodna.
+nie) - przeciecie zewnetrznej powierzch-
+ni kadluba równoleglymi plaszczyznami
+Rzut boczny kadtuba (bok) - przecie-
+do plaszczyzny owreza (obrys przekroju
+cie zewnetrznej powierzchni kadluba sze-
+poprzecznego kadluba jachtu W potowie
+RZUT BOCZNY (BOK)
+RZUT POPRZECZNY (OWREZENIE)
+1 BC
+wreznice owreze KLW
+wzdluznice
+wreznice
+- of
+ukosnice
+wzdluznice
+LKLW
+1 B
+2 KLW
+Lc
+wodnice
+RZUT POZIOMY (PÓLSZERZ)
+wzdluznice
+wodnice
+wreznice
+ukosnice
+W Rys. plaszczyznie 3.1. Linie teoretyczne kadtuba jachtu: BC - szerokosc calkowita, BKLW szerokosc
+LKLW - najwieksza dtugosc W plaszczyznie konstrukcyjnej linii wodnej, To - zanurzenie - dlugosc calkowite.
+konstrukcyjnej linii wodnej, KLW - konstrukcyjna linia wodna, KLW Lo - najwieksza calkowita,
+
+
+--- Azure Computer Vision (Read API) ---
+Azure: Reading 'IMG_20250529_124158664.jpg', operation ID: 49019b2b-1907-4ade-b526-0d62614f0dc0. Waiting...
+Żeglarz jachtowy i jachtowy sternik morski
+30
+regiem płaszczyzn równoległych do pio-
+nowej płaszczyzny symetrii przechodzą-
+Geometrie kształtu kadłuba przed-
+cej wzdłuż przez środek jego szerokości
+stawia konstruktor na rysunku konstruk-
+cyjnym, na którym pokazane są prze-
+kroje kadłuba i jego linie konstrukcyj-
+Rzut poziomy kadłuba (półszerz) -
+ne w trzech podstawowych rzutach
+przecięcie zewnętrznej powierzchni ka-
+(rys. 3.1). Na rzucie bocznym kadłuba
+dłuba poziomymi płaszczyznami równo-
+przedstawiona jest konstrukcyjna linia
+ległymi do płaszczyzny konstrukcyjnej
+wodna - KLW (wodnica konstrukcyj-
+linii wodnej, dzielącej jego część nad-
+na - WK). Jest to linia wyznaczona na
+wodną i podwodną, pokrywającą się
+powierzchni kadłuba jachtu. Położona
+z powierzchnią swobodnej wody, przy
+jest na poziomej płaszczyźnie odpowia-
+dającej powierzchni, do której zanurzo-
+obciążonym jachcie.
+ny jest kadłub jachtu. Płaszczyzna kon-
+strukcyjnej linii wodnej dzieli kadłub na
+Rzut poprzeczny kadłuba (owręże-
+część nawodną i podwodną.
+nie) - przecięcie zewnętrznej powierzch-
+ni kadłuba równoległymi płaszczyznami
+Rzut boczny kadłuba (bok) - przecię-
+do płaszczyzny owręża (obrys przekroju
+cie zewnętrznej powierzchni kadłuba sze-
+poprzecznego kadłuba jachtu w połowie
+RZUT BOCZNY (BOK)
+RZUT POPRZECZNY (OWRĘŻENIE)
+wrężnice owręże KLW
+1 B
+wzdłużnice
+2 C
+K
+wrężnice
+ukośnice
+wzdłużnice
+-KLW
+-IN
+K
+C
+wodnice
+RZUT POZIOMY (PÓŁSZERZ)
+KLW
+B.
+1/2
+1
+wodnice
+wrężnice
+ukośnice
+wzdłużnice
+Rys. 3.1. Linie teoretyczne kadłuba jachtu: Bc - szerokość całkowita, Bw - największa szerokość
+w płaszczyźnie konstrukcyjnej linii wodnej, KLW - konstrukcyjna linia wodna, Lc - długość całkowita,
+LKLw - największa długość w płaszczyźnie konstrukcyjnej linii wodnej, Tc - zanurzenie całkowite.
+
+
+--------------------------------------------------
+Przetwarzanie pliku: pages/IMG_20250529_124201811.jpg
+--- Google Cloud Vision ---
+H
+Lloyd
+T₁ = T max
+B=BPRS = BLO
+nawis
+rufowy
+3. Budowa i obsługa jachtu
+max
+LC
+Lpp
+L = L₁
+Lloyd
+LKLW = LOO (PRS)
+PP
+owręże
+12
+KLW
+L(PRS) = 1Bc + Lpp
+KLW
+nawis
+dziobowy
+Bo
+PRS
+Lloyd
+Rys. 3.2. Podstawowe parametry kadłuba jachtu: B- szerokość całkowita, BKLW - największa szero-
+kość w płaszczyźnie konstrukcyjnej linii wodnej, B szerokość klasyfikacyjna, Bo- szerokość na
+owrężu, B - szerokość według przepisów Polskiego Rejestru Statków, FB - wolna burta, H- cał-
+kowita wysokość boczna, KLW - konstrukcyjna linia wodna, Lkw - największa długość w płaszczyźnie
+konstrukcyjnej linii wodnej, LMAX - długość maksymalna, Lc - długość całkowita, Lloyd- długość klasyfi-
+kacyjna, Lpp - długość po pokładzie, T- zanurzenie całkowite.
+długości konstrukcyjnej linii wodnej), dzie-
+lącej jacht na część dziobową i rufową.
+max
+- dłu-
+Współczesne jachty żaglowe charak-
+teryzują określone parametry. Do naj-
+częściej stosowanych parametrów ka-
+dłuba jachtu należą (rys. 3.2):
+- długość maksymalna L,
+gość jachtu ze wszystkimi wystający-
+mi elementami osprzętu, steru oraz
+drzewc jak bukszpryt, wystrzał itp.,
+długość całkowita L - odległość po-
+między liniami pionowymi przechodzą-
+cymi przez najbardziej oddalone punkty
+kadłuba (bez uwzględniania wystających
+elementów osprzętu, steru oraz drzewc
+jak bukszpryt, wystrzał; gdzie nawis dzio-
+bowy lub rufowy oznacza wychyloną po-
+nad wodę odpowiednią część kadłuba
+po stronie dziobowej lub rufowej,
+- długość po pokładzie L
+- odle-
+głość pomiędzy liniami pionowymi
+przechodzącymi przez skrajne punk-
+ty pokładu (według przepisów Pol-
+skiego Rejestru Statków określana
+jest też jako LKLW),
+pp
+- długość klasyfikacyjna Lloyd - od-
+ległość określona formułami pomia-
+rowymi towarzystw klasyfikacyjnych,
+np. towarzystwa Lloyd,
+31
+
+
+--- AWS Textract ---
+31
+3. Budowa i obsluga jachtu
+Lmay
+L,
+Lpp
+L=L
+Lloyd
+LKLW = (PRS)
+wither
+LKLW
+KLW
+-IN
+nam
+I
+I
+11
+nawis
+dziobowy
+nawis
+rufowy
+Love
+B
+B
+V
+Rys. 3.2. Podstawowe parametry kadluba jachtu: BC - szerokosc calkowita, BKLW - najwieksza szero-
+kosc W plaszczyznie konstrukcyjnej linii wodnej, BLJoyd szerokosc klasyfikacyjna, Bo - szerokosc na
+owrezu, BPRS - szerokosó wedlug przepisów Polskiego Rejestru Statkow, FB - wolna burta, H - cat-
+kowita wysokosc boczna, KLW - konstrukcyjna linia wodna, LKLW najwieksza dlugosé W plaszczyznie
+konstrukcyjnej linii wodnej, LMAX - dlugosc maksymalna, Lo - dlugosé calkowita, Luoya dlugosé klasyfi-
+kacyjna, Lpp - dlugosc po poktadzie, To - zanurzenie calkowite.
+dlugosci konstrukcyjnej linii wodnej), dzie-
+elementów osprzetu, steru oraz drzewc
+lacej jacht na czesc dziobowa i rufowa.
+jak bukszpryt, wystrzal; gdzie nawis dzio-
+bowy lub rufowy oznacza wychylona po-
+Wspólczesne jachty zaglowe charak-
+nad wode odpowiednia czesó kadluba
+teryzuja okreslone parametry. Do naj-
+po stronie dziobowej lub rufowej,
+czesciej stosowanych parametrów ka-
+- dlugosc po pokladzie Lpp - odle-
+dluba jachtu naleza (rys. 3.2):
+glosc pomiedzy liniami pionowymi
+- dlugosó maksymalna Lmar max - dtu-
+przechodzacymi przez skrajne punk-
+gosc jachtu ze wszystkimi wystajacy-
+ty pokladu (wedlug przepisów Pol-
+mi elementami osprzetu, steru oraz
+skiego Rejestru Statkow okreslana
+drzewc jak bukszpryt, wystrzal itp.,
+jest tez jako LKLW),
+- dlugosc calkowita L, - odleglosc po-
+- dlugosc klasyfikacyjna LLloyd - od-
+miedzy liniami pionowymi przechodza-
+leglosé okreslona formulami pomia-
+cymi przez najbardziej oddalone punkty
+rowymi towarzystw klasyfikacyjnych,
+kadluba (bez uwzgledniania wystajacych
+np. towarzystwa Lloyd,
+
+
+--- Azure Computer Vision (Read API) ---
+Azure: Reading 'IMG_20250529_124201811.jpg', operation ID: f5f4147d-ca3f-4ed9-8431-358994b3b235. Waiting...
+3. Budowa i obsługa jachtu
+31
+IL max
+Lc
+Lpp
+L = LLloyd
+LKLW= LO (PRS)
+4
+T
+-
+- - -
+24KLW
+Y
+owręże
+LL
+KLW
+I
+nawis
+Tc=T max
+dziobowy
+V
+nawis
+rufowy
+LIPRS) = 2BC + LPP
+B.
+B =BORS = D Lloyd
+Rys. 3.2. Podstawowe parametry kadłuba jachtu: Bc - szerokość całkowita, Bkuw - największa szero-
+kość w płaszczyźnie konstrukcyjnej linii wodnej, Buloyd- szerokość klasyfikacja, Bo - szerokość na
+owrężu, BpRs - szerokość według przepisów Polskiego Rejestru Statków, Fg - wolna burta, Hc - cał-
+kowita wysokość boczna, KLW - konstrukcyjna linia wodna, LKLw - największa długość w płaszczyźnie
+konstrukcyjnej linii wodnej, LMAX - długość maksymalna, Lc - długość całkowita, Luloyd- długość klasyfi-
+kacyjna, Lpp - długość po pokładzie, Tc - zanurzenie całkowite.
+długości konstrukcyjnej linii wodnej), dzie-
+elementów osprzętu, steru oraz drzewc
+lącej jacht na część dziobową i rufową.
+jak bukszpryt, wystrzał; gdzie nawis dzio-
+bowy lub rufowy oznacza wychyloną po-
+Współczesne jachty żaglowe charak-
+nad wodę odpowiednią część kadłuba
+teryzują określone parametry. Do naj-
+po stronie dziobowej lub rufowej,
+częściej stosowanych parametrów ka-
+- długość po pokładzie L. - odle-
+dłuba jachtu należą (rys. 3.2):
+głość pomiędzy liniami pionowymi
+- długość maksymalna Lux - dłu-
+przechodzącymi przez skrajne punk-
+gość jachtu ze wszystkimi wystający-
+ty pokładu (według przepisów Pol-
+mi elementami osprzętu, steru oraz
+skiego Rejestru Statków określana
+drzewc jak bukszpryt, wystrzał itp .,
+jest też jako LKLW),
+- długość całkowita L - odległość po-
+- długość klasyfikacjina LLloyd - od-
+między liniami pionowymi przechodzą-
+ległość określona formułami pomia-
+cymi przez najbardziej oddalone punkty
+rowymi towarzystw klasyfikacjiych,
+kadłuba (bez uwzględniania wystających
+np. towarzystwa Lloyd,
+
+
+--------------------------------------------------
+--- TESTY OCR ZAKOŃCZONE ---
+
+--- WSKAZÓWKI DOTYCZĄCE ANALIZY WYNIKÓW ---
+Porównaj tekst uzyskany z każdego API dla każdej strony.
+- Sprawdź dokładność rozpoznawania (literówki, błędy w słowach).
+- Zwróć uwagę na poprawne rozpoznawanie polskich znaków diakrytycznych.
+- Oceń, jak API radzi sobie z różnymi czcionkami, rozmiarami tekstu i układami strony.
+- Zaobserwuj czas odpowiedzi (szczególnie dla Azure ze względu na polling).
+- Weź pod uwagę cenę za 1000 stron dla każdego dostawcy przy masowym przetwarzaniu.
+
+Na podstawie tych obserwacji i kalkulacji kosztów wybierz najlepsze API dla Twojego projektu.
+Pamiętaj o testach na większej liczbie różnorodnych stron, aby wyniki były bardziej miarodajne.
