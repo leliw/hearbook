@@ -313,7 +313,7 @@ erDiagram
         TEXT book_id PK
         TEXT title
         TEXT cover_image_path
-        TEXT status ENUM("scanned", "processing", "ready", "archived")
+        TEXT status "ENUM('scanned', 'processing', 'processed', 'error')"
         TEXT created_at
         TEXT updated_at
         INT current_page_index
@@ -326,8 +326,8 @@ erDiagram
         TEXT image_path
         TEXT text_path
         TEXT audio_path
-        INT page_number OPTIONAL
-        TEXT status ENUM("scanned", "processing", "processed", "error")
+        INT page_number "OPTIONAL"
+        TEXT status "ENUM('scanned', 'processing', 'processed', 'error')"
         INT order_in_book
     }
     READING_PROGRESS {
