@@ -74,7 +74,7 @@ Stworzenie aplikacji Android umożliwiającej osobom ze słabym wzrokiem skanowa
   - Wireframes ekranów głównych (Główny, Skanowanie, Czytanie)
   - Projektowanie dużych elementów UI (4-8 ikon na ekranie)
   - Wybór palet kolorowych z wysokim kontrastem
-- [ ] **Implementacja podstawowego UI**
+- [x] **Implementacja podstawowego UI**
   - Ekran główny z listą książek
   - Ekran dodawania nowej książki
   - Nawigacja między ekranami
