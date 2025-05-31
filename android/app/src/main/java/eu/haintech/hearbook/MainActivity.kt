@@ -75,7 +75,10 @@ fun HearBookApp() {
         composable("books") {
             BookListScreen(
                 books = sampleBooks,
-                onAddBookClick = { navController.navigate("scanning") },
+                onAddBookClick = { 
+                    val newBookId = UUID.randomUUID().toString()
+                    navController.navigate("scanning/$newBookId") 
+                },
                 onBookClick = { book -> 
                     if (book.status == BookStatus.READY_TO_READ) {
                         navController.navigate("reading/${book.id}")
@@ -84,11 +87,16 @@ fun HearBookApp() {
             )
         }
         
-        composable("scanning") {
+        composable(
+            route = "scanning/{bookId}",
+            arguments = listOf(navArgument("bookId") { type = NavType.StringType })
+        ) { backStackEntry ->
+            val bookId = backStackEntry.arguments?.getString("bookId") ?: return@composable
             ScanningScreen(
                 pageCount = pageCount,
                 onTakePhoto = { pageCount++ },
-                onFinishScanning = { navController.popBackStack() }
+                onFinishScanning = { navController.popBackStack() },
+                bookId = bookId
             )
         }
         
