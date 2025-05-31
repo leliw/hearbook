@@ -20,7 +20,6 @@ import eu.haintech.hearbook.ui.screens.BookListScreen
 import eu.haintech.hearbook.ui.screens.ReadingScreen
 import eu.haintech.hearbook.ui.screens.ScanningScreen
 import eu.haintech.hearbook.ui.theme.HearBookTheme
-import java.util.*
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,7 +48,7 @@ fun HearBookApp() {
     val sampleBooks = remember {
         listOf(
             Book(
-                id = UUID.randomUUID().toString(),
+                id = 1,
                 title = "Wojna i Pokój",
                 status = BookStatus.READY_TO_READ,
                 pageCount = 100,
@@ -57,14 +56,14 @@ fun HearBookApp() {
                 readingProgress = 0.5f
             ),
             Book(
-                id = UUID.randomUUID().toString(),
+                id = 2,
                 title = "Pan Tadeusz",
                 status = BookStatus.SCANNING,
                 pageCount = 20,
                 currentPage = 0
             ),
             Book(
-                id = UUID.randomUUID().toString(),
+                id = 3,
                 title = "Lalka",
                 status = BookStatus.PROCESSING
             )
@@ -76,8 +75,7 @@ fun HearBookApp() {
             BookListScreen(
                 books = sampleBooks,
                 onAddBookClick = { 
-                    val newBookId = UUID.randomUUID().toString()
-                    navController.navigate("scanning/$newBookId") 
+                    navController.navigate("add_book")
                 },
                 onBookClick = { book -> 
                     if (book.status == BookStatus.READY_TO_READ) {
@@ -86,12 +84,25 @@ fun HearBookApp() {
                 }
             )
         }
+
+        composable("add_book") {
+            AddBookScreen(
+                onNavigateToScanning = { bookId ->
+                    navController.navigate("scanning/$bookId") {
+                        popUpTo("add_book") { inclusive = true }
+                    }
+                },
+                onNavigateBack = {
+                    navController.popBackStack()
+                }
+            )
+        }
         
         composable(
             route = "scanning/{bookId}",
-            arguments = listOf(navArgument("bookId") { type = NavType.StringType })
+            arguments = listOf(navArgument("bookId") { type = NavType.LongType })
         ) { backStackEntry ->
-            val bookId = backStackEntry.arguments?.getString("bookId") ?: return@composable
+            val bookId = backStackEntry.arguments?.getLong("bookId") ?: return@composable
             ScanningScreen(
                 pageCount = pageCount,
                 onTakePhoto = { pageCount++ },
@@ -102,9 +113,9 @@ fun HearBookApp() {
         
         composable(
             route = "reading/{bookId}",
-            arguments = listOf(navArgument("bookId") { type = NavType.StringType })
+            arguments = listOf(navArgument("bookId") { type = NavType.LongType })
         ) { backStackEntry ->
-            val bookId = backStackEntry.arguments?.getString("bookId")
+            val bookId = backStackEntry.arguments?.getLong("bookId")
             val book = sampleBooks.find { it.id == bookId }
             
             book?.let {

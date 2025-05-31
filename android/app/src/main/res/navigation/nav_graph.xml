@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/bookListFragment">
+
+    <fragment
+        android:id="@+id/bookListFragment"
+        android:name="eu.haintech.hearbook.ui.booklist.BookListFragment"
+        android:label="Lista książek">
+        <action
+            android:id="@+id/action_bookListFragment_to_addBookFragment"
+            app:destination="@id/addBookFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addBookFragment"
+        android:name="eu.haintech.hearbook.ui.addbook.AddBookFragment"
+        android:label="Dodaj książkę">
+        <action
+            android:id="@+id/action_addBookFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment">
+            <argument
+                android:name="bookId"
+                app:argType="long" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="eu.haintech.hearbook.ui.camera.CameraFragment"
+        android:label="Skanowanie stron">
+        <argument
+            android:name="bookId"
+            app:argType="long" />
+    </fragment>
+
+</navigation> 

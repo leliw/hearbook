@@ -70,7 +70,7 @@ class CameraViewModel : ViewModel() {
 
     fun takePhoto(
         context: Context,
-        bookId: String,
+        bookId: Long,
         executor: Executor,
         onPhotoTaken: (Uri) -> Unit,
         onError: (String) -> Unit
@@ -104,7 +104,7 @@ class CameraViewModel : ViewModel() {
         }
     }
 
-    private fun createFile(context: Context, bookId: String): File {
+    private fun createFile(context: Context, bookId: Long): File {
         val timeStamp = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(System.currentTimeMillis())
         val storageDir = context.getExternalFilesDir("books/$bookId")
         storageDir?.mkdirs()

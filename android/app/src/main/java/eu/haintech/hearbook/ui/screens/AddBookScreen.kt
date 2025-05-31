@@ -2,32 +2,51 @@ package eu.haintech.hearbook.ui.screens
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import eu.haintech.hearbook.R
+import eu.haintech.hearbook.ui.viewmodels.AddBookViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AddBookScreen(
-    onNavigateBack: () -> Unit
+    onNavigateToScanning: (Long) -> Unit,
+    onNavigateBack: () -> Unit,
+    viewModel: AddBookViewModel = viewModel()
 ) {
     var title by remember { mutableStateOf("") }
     var author by remember { mutableStateOf("") }
-    var description by remember { mutableStateOf("") }
+
+    LaunchedEffect(viewModel.uiState) {
+        viewModel.uiState.collect { state ->
+            when (state) {
+                is AddBookViewModel.AddBookUiState.Success -> {
+                    onNavigateToScanning(state.bookId)
+                }
+                is AddBookViewModel.AddBookUiState.Error -> {
+                    // TODO: Show error message
+                }
+                AddBookViewModel.AddBookUiState.Initial -> {
+                    // Initial state, nothing to do
+                }
+            }
+        }
+    }
 
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(text = stringResource(R.string.add_book)) },
+                title = { Text(stringResource(R.string.add_book)) },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
                         Icon(
-                            imageVector = Icons.Default.ArrowBack,
-                            contentDescription = stringResource(R.string.navigate_back)
+                            imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                            contentDescription = stringResource(R.string.back)
                         )
                     }
                 }
@@ -55,24 +74,11 @@ fun AddBookScreen(
                 modifier = Modifier.fillMaxWidth()
             )
 
-            OutlinedTextField(
-                value = description,
-                onValueChange = { description = it },
-                label = { Text(stringResource(R.string.book_description)) },
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(120.dp),
-                maxLines = 4
-            )
-
             Button(
-                onClick = {
-                    // TODO: Implement book saving
-                    onNavigateBack()
-                },
+                onClick = { viewModel.addBook(title, author) },
                 modifier = Modifier.fillMaxWidth()
             ) {
-                Text(text = stringResource(R.string.save_book))
+                Text(stringResource(R.string.next))
             }
         }
     }

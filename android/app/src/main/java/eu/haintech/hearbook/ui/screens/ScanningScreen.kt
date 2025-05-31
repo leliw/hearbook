@@ -32,7 +32,7 @@ fun ScanningScreen(
     pageCount: Int,
     onTakePhoto: () -> Unit,
     onFinishScanning: () -> Unit,
-    bookId: String,
+    bookId: Long,
     viewModel: CameraViewModel = viewModel()
 ) {
     val context = LocalContext.current

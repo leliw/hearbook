@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">HearBook</string>
-    <string name="new_book">Nowa Książka</string>
-    <string name="add_book">Dodaj Książkę</string>
+    <string name="new_book">Nowa książka</string>
+    <string name="add_book">Dodaj książkę</string>
     <string name="navigate_back">Wróć</string>
-    <string name="book_title">Tytuł</string>
+    <string name="book_title">Tytuł książki</string>
     <string name="book_author">Autor</string>
     <string name="book_description">Opis</string>
     <string name="save_book">Zapisz Książkę</string>
@@ -13,8 +13,8 @@
     <string name="status_processing">Przetwarzanie</string>
     <string name="status_ready">Gotowa do czytania</string>
     <string name="reading_progress">Strona %1$d z %2$d (%3$d%%)</string>
-    <string name="take_photo">Zrób Zdjęcie</string>
-    <string name="finish_scanning">Zakończ Skanowanie</string>
+    <string name="take_photo">Zrób zdjęcie</string>
+    <string name="finish_scanning">Zakończ skanowanie</string>
     <string name="pages_count">Stron: %d</string>
     <string name="play">Odtwórz</string>
     <string name="pause">Pauza</string>
@@ -24,4 +24,6 @@
     <string name="previous_paragraph">Poprzedni Akapit</string>
     <string name="reading_speed">Prędkość Czytania</string>
     <string name="current_position">Strona %1$d / Akapit %2$d</string>
+    <string name="next">Dalej</string>
+    <string name="back">Wróć</string>
 </resources>

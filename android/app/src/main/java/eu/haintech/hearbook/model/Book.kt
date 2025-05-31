@@ -1,17 +1,17 @@
 package eu.haintech.hearbook.model
 
-enum class BookStatus {
-    SCANNING,
-    PROCESSING,
-    READY_TO_READ
-}
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
+@Entity(tableName = "books")
 data class Book(
-    val id: String,
+    @PrimaryKey(autoGenerate = true)
+    val id: Long = 0,
     val title: String,
-    val status: BookStatus,
-    val coverUrl: String? = null,
+    val author: String? = null,
+    val status: BookStatus = BookStatus.SCANNING,
     val pageCount: Int = 0,
     val currentPage: Int = 0,
-    val readingProgress: Float = 0f
+    val readingProgress: Float = 0f,
+    val createdAt: Long = System.currentTimeMillis()
 ) 

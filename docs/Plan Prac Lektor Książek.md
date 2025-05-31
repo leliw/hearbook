@@ -78,7 +78,7 @@ Stworzenie aplikacji Android umożliwiającej osobom ze słabym wzrokiem skanowa
   - Ekran główny z listą książek
   - Ekran dodawania nowej książki
   - Nawigacja między ekranami
-- [ ] **Integracja z Android Camera API**
+- [X] **Integracja z Android Camera API**
   - Implementacja robienia zdjęć
   - Zapisywanie zdjęć w pamięci lokalnej
   - Grupowanie zdjęć w "książki"
