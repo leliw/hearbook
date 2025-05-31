@@ -8,29 +8,38 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import eu.haintech.hearbook.model.Book
+import eu.haintech.hearbook.model.AppDatabase
+import eu.haintech.hearbook.model.BookRepository
 import eu.haintech.hearbook.model.BookStatus
 import eu.haintech.hearbook.ui.screens.AddBookScreen
 import eu.haintech.hearbook.ui.screens.BookListScreen
 import eu.haintech.hearbook.ui.screens.ReadingScreen
 import eu.haintech.hearbook.ui.screens.ScanningScreen
 import eu.haintech.hearbook.ui.theme.HearBookTheme
+import eu.haintech.hearbook.ui.viewmodel.BookListViewModel
 
 class MainActivity : ComponentActivity() {
+    private lateinit var repository: BookRepository
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
+        val database = AppDatabase.getDatabase(this)
+        repository = BookRepository(database.bookDao())
+        
         setContent {
             HearBookTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    HearBookApp()
+                    HearBookApp(repository)
                 }
             }
         }
@@ -38,42 +47,20 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun HearBookApp() {
+fun HearBookApp(repository: BookRepository) {
     val navController = rememberNavController()
-    
-    // Temporary state for demonstration
     var pageCount by remember { mutableStateOf(0) }
     var isPlaying by remember { mutableStateOf(false) }
     
-    val sampleBooks = remember {
-        listOf(
-            Book(
-                id = 1,
-                title = "Wojna i Pokój",
-                status = BookStatus.READY_TO_READ,
-                pageCount = 100,
-                currentPage = 50,
-                readingProgress = 0.5f
-            ),
-            Book(
-                id = 2,
-                title = "Pan Tadeusz",
-                status = BookStatus.SCANNING,
-                pageCount = 20,
-                currentPage = 0
-            ),
-            Book(
-                id = 3,
-                title = "Lalka",
-                status = BookStatus.PROCESSING
-            )
-        )
-    }
+    val bookListViewModel = viewModel<BookListViewModel>(
+        factory = BookListViewModel.Factory(repository)
+    )
+    val books by bookListViewModel.books.collectAsState()
 
     NavHost(navController = navController, startDestination = "books") {
         composable("books") {
             BookListScreen(
-                books = sampleBooks,
+                viewModel = bookListViewModel,
                 onAddBookClick = { 
                     navController.navigate("add_book")
                 },
@@ -115,23 +102,21 @@ fun HearBookApp() {
             route = "reading/{bookId}",
             arguments = listOf(navArgument("bookId") { type = NavType.LongType })
         ) { backStackEntry ->
-            val bookId = backStackEntry.arguments?.getLong("bookId")
-            val book = sampleBooks.find { it.id == bookId }
+            val bookId = backStackEntry.arguments?.getLong("bookId") ?: return@composable
+            val book = books.find { it.id == bookId } ?: return@composable
             
-            book?.let {
-                ReadingScreen(
-                    bookTitle = it.title,
-                    currentPage = it.currentPage,
-                    currentParagraph = 1,
-                    isPlaying = isPlaying,
-                    onPlayPauseClick = { isPlaying = !isPlaying },
-                    onPreviousPageClick = { /* TODO */ },
-                    onNextPageClick = { /* TODO */ },
-                    onPreviousParagraphClick = { /* TODO */ },
-                    onNextParagraphClick = { /* TODO */ },
-                    onSpeedClick = { /* TODO */ }
-                )
-            }
+            ReadingScreen(
+                bookTitle = book.title,
+                currentPage = book.currentPage,
+                currentParagraph = 1,
+                isPlaying = isPlaying,
+                onPlayPauseClick = { isPlaying = !isPlaying },
+                onPreviousPageClick = { /* TODO */ },
+                onNextPageClick = { /* TODO */ },
+                onPreviousParagraphClick = { /* TODO */ },
+                onNextParagraphClick = { /* TODO */ },
+                onSpeedClick = { /* TODO */ }
+            )
         }
     }
 } 

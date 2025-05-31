@@ -20,10 +20,10 @@ class AddBookViewModel(application: Application) : AndroidViewModel(application)
         repository = BookRepository(database.bookDao())
     }
 
-    fun addBook(title: String?, author: String?) {
+    fun addBook(title: String, author: String) {
         viewModelScope.launch {
             try {
-                val bookId = repository.insert(title, author)
+                val bookId = repository.insert(title.ifBlank { null }, author.ifBlank { null })
                 _uiState.value = AddBookUiState.Success(bookId)
             } catch (e: Exception) {
                 _uiState.value = AddBookUiState.Error(e.message ?: "Unknown error")

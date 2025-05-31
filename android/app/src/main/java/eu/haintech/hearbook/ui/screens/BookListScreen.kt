@@ -14,17 +14,21 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import eu.haintech.hearbook.R
 import eu.haintech.hearbook.model.Book
 import eu.haintech.hearbook.model.BookStatus
+import eu.haintech.hearbook.ui.viewmodel.BookListViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun BookListScreen(
     onAddBookClick: () -> Unit,
     onBookClick: (Book) -> Unit = {},
-    books: List<Book> = emptyList()
+    viewModel: BookListViewModel = viewModel()
 ) {
+    val books by viewModel.books.collectAsState()
+
     Scaffold(
         topBar = {
             TopAppBar(

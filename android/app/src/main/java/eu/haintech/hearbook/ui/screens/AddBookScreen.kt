@@ -75,7 +75,7 @@ fun AddBookScreen(
             )
 
             Button(
-                onClick = { viewModel.addBook(title, author) },
+                onClick = { viewModel.addBook(title.trim(), author.trim()) },
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Text(stringResource(R.string.next))
