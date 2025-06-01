@@ -65,9 +65,7 @@ fun HearBookApp(repository: BookRepository) {
                     navController.navigate("add_book")
                 },
                 onBookClick = { book -> 
-                    if (book.status == BookStatus.READY_TO_READ) {
-                        navController.navigate("reading/${book.id}")
-                    }
+                    navController.navigate("reading/${book.id}")
                 }
             )
         }

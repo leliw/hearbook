@@ -24,7 +24,7 @@ import eu.haintech.hearbook.ui.viewmodel.BookListViewModel
 @Composable
 fun BookListScreen(
     onAddBookClick: () -> Unit,
-    onBookClick: (Book) -> Unit = {},
+    onBookClick: (Book) -> Unit,
     viewModel: BookListViewModel = viewModel()
 ) {
     val books by viewModel.books.collectAsState()
