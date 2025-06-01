@@ -2,6 +2,7 @@ package eu.haintech.hearbook.ui.screens
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Image
 import androidx.compose.material.icons.filled.KeyboardArrowLeft
 import androidx.compose.material.icons.filled.KeyboardArrowRight
 import androidx.compose.material.icons.filled.Pause
@@ -26,7 +27,8 @@ fun ReadingScreen(
     onNextPageClick: () -> Unit,
     onPreviousParagraphClick: () -> Unit,
     onNextParagraphClick: () -> Unit,
-    onSpeedClick: () -> Unit
+    onSpeedClick: () -> Unit,
+    onViewScansClick: () -> Unit
 ) {
     Scaffold(
         topBar = {
@@ -177,6 +179,35 @@ fun ReadingScreen(
                     text = stringResource(R.string.reading_speed),
                     style = MaterialTheme.typography.titleLarge
                 )
+            }
+
+            // View scans button
+            Button(
+                onClick = onViewScansClick,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(64.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = MaterialTheme.colorScheme.tertiary,
+                    contentColor = MaterialTheme.colorScheme.onTertiary
+                )
+            ) {
+                Row(
+                    horizontalArrangement = Arrangement.Center,
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Image,
+                        contentDescription = null,
+                        modifier = Modifier.size(32.dp)
+                    )
+                    Spacer(modifier = Modifier.width(8.dp))
+                    Text(
+                        text = stringResource(R.string.view_scans),
+                        style = MaterialTheme.typography.titleLarge
+                    )
+                }
             }
         }
     }

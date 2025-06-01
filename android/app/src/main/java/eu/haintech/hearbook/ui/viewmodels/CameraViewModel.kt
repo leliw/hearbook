@@ -13,7 +13,9 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import dagger.hilt.android.lifecycle.HiltViewModel
 import eu.haintech.hearbook.R
+import eu.haintech.hearbook.utils.FileManager
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -22,8 +24,12 @@ import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Locale
 import java.util.concurrent.Executor
+import javax.inject.Inject
 
-class CameraViewModel : ViewModel() {
+@HiltViewModel
+class CameraViewModel @Inject constructor(
+    private val fileManager: FileManager
+) : ViewModel() {
     private val _pageCount = MutableStateFlow(0)
     val pageCount: StateFlow<Int> = _pageCount.asStateFlow()
 
@@ -106,9 +112,7 @@ class CameraViewModel : ViewModel() {
 
     private fun createFile(context: Context, bookId: Long): File {
         val timeStamp = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(System.currentTimeMillis())
-        val storageDir = context.getExternalFilesDir("books/$bookId")
-        storageDir?.mkdirs()
-        return File(storageDir, "PAGE_${timeStamp}.jpg")
+        return fileManager.createPageFile(context, bookId, timeStamp)
     }
 
     fun bindPreview(

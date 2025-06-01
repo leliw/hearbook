@@ -6,9 +6,10 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.hilt.navigation.compose.hiltViewModel
 import eu.haintech.hearbook.R
 import eu.haintech.hearbook.ui.viewmodels.AddBookViewModel
 
@@ -17,10 +18,12 @@ import eu.haintech.hearbook.ui.viewmodels.AddBookViewModel
 fun AddBookScreen(
     onNavigateToScanning: (Long) -> Unit,
     onNavigateBack: () -> Unit,
-    viewModel: AddBookViewModel = viewModel()
+    viewModel: AddBookViewModel = hiltViewModel()
 ) {
     var title by remember { mutableStateOf("") }
     var author by remember { mutableStateOf("") }
+    var showError by remember { mutableStateOf<String?>(null) }
+    val snackbarHostState = remember { SnackbarHostState() }
 
     LaunchedEffect(viewModel.uiState) {
         viewModel.uiState.collect { state ->
@@ -29,7 +32,11 @@ fun AddBookScreen(
                     onNavigateToScanning(state.bookId)
                 }
                 is AddBookViewModel.AddBookUiState.Error -> {
-                    // TODO: Show error message
+                    showError = state.message
+                    snackbarHostState.showSnackbar(
+                        message = state.message,
+                        duration = SnackbarDuration.Long
+                    )
                 }
                 AddBookViewModel.AddBookUiState.Initial -> {
                     // Initial state, nothing to do
@@ -51,7 +58,8 @@ fun AddBookScreen(
                     }
                 }
             )
-        }
+        },
+        snackbarHost = { SnackbarHost(snackbarHostState) }
     ) { paddingValues ->
         Column(
             modifier = Modifier
@@ -64,18 +72,23 @@ fun AddBookScreen(
                 value = title,
                 onValueChange = { title = it },
                 label = { Text(stringResource(R.string.book_title)) },
-                modifier = Modifier.fillMaxWidth()
+                modifier = Modifier.fillMaxWidth(),
+                isError = showError != null
             )
 
             OutlinedTextField(
                 value = author,
                 onValueChange = { author = it },
                 label = { Text(stringResource(R.string.book_author)) },
-                modifier = Modifier.fillMaxWidth()
+                modifier = Modifier.fillMaxWidth(),
+                isError = showError != null
             )
 
             Button(
-                onClick = { viewModel.addBook(title.trim(), author.trim()) },
+                onClick = { 
+                    showError = null
+                    viewModel.addBook(title.trim(), author.trim()) 
+                },
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Text(stringResource(R.string.next))

@@ -25,6 +25,7 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.viewmodel.compose.viewModel
 import eu.haintech.hearbook.R
 import eu.haintech.hearbook.ui.viewmodels.CameraViewModel
+import androidx.hilt.navigation.compose.hiltViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -33,7 +34,7 @@ fun ScanningScreen(
     onTakePhoto: () -> Unit,
     onFinishScanning: () -> Unit,
     bookId: Long,
-    viewModel: CameraViewModel = viewModel()
+    viewModel: CameraViewModel = hiltViewModel()
 ) {
     val context = LocalContext.current
     val lifecycleOwner = LocalLifecycleOwner.current

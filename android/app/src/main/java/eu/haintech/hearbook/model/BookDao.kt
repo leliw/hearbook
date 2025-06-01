@@ -11,6 +11,9 @@ interface BookDao {
     @Query("SELECT COUNT(*) FROM books")
     suspend fun getBookCount(): Int
 
+    @Query("SELECT * FROM books WHERE id = :bookId")
+    suspend fun getBook(bookId: Long): Book?
+
     @Insert
     suspend fun insertBook(book: Book): Long
 

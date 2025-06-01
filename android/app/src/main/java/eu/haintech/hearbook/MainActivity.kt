@@ -8,30 +8,30 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import eu.haintech.hearbook.model.AppDatabase
+import dagger.hilt.android.AndroidEntryPoint
 import eu.haintech.hearbook.model.BookRepository
-import eu.haintech.hearbook.model.BookStatus
 import eu.haintech.hearbook.ui.screens.AddBookScreen
 import eu.haintech.hearbook.ui.screens.BookListScreen
+import eu.haintech.hearbook.ui.screens.PagePreviewScreen
 import eu.haintech.hearbook.ui.screens.ReadingScreen
 import eu.haintech.hearbook.ui.screens.ScanningScreen
 import eu.haintech.hearbook.ui.theme.HearBookTheme
 import eu.haintech.hearbook.ui.viewmodel.BookListViewModel
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
-    private lateinit var repository: BookRepository
+    @Inject
+    lateinit var repository: BookRepository
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        
-        val database = AppDatabase.getDatabase(this)
-        repository = BookRepository(database.bookDao())
         
         setContent {
             HearBookTheme {
@@ -52,9 +52,7 @@ fun HearBookApp(repository: BookRepository) {
     var pageCount by remember { mutableStateOf(0) }
     var isPlaying by remember { mutableStateOf(false) }
     
-    val bookListViewModel = viewModel<BookListViewModel>(
-        factory = BookListViewModel.Factory(repository)
-    )
+    val bookListViewModel: BookListViewModel = hiltViewModel()
     val books by bookListViewModel.books.collectAsState()
 
     NavHost(navController = navController, startDestination = "books") {
@@ -113,7 +111,19 @@ fun HearBookApp(repository: BookRepository) {
                 onNextPageClick = { /* TODO */ },
                 onPreviousParagraphClick = { /* TODO */ },
                 onNextParagraphClick = { /* TODO */ },
-                onSpeedClick = { /* TODO */ }
+                onSpeedClick = { /* TODO */ },
+                onViewScansClick = { navController.navigate("page_preview/$bookId") }
+            )
+        }
+
+        composable(
+            route = "page_preview/{bookId}",
+            arguments = listOf(navArgument("bookId") { type = NavType.LongType })
+        ) { backStackEntry ->
+            val bookId = backStackEntry.arguments?.getLong("bookId") ?: return@composable
+            PagePreviewScreen(
+                bookId = bookId,
+                navController = navController
             )
         }
     }

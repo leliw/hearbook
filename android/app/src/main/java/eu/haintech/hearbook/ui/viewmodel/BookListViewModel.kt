@@ -1,15 +1,17 @@
 package eu.haintech.hearbook.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
+import dagger.hilt.android.lifecycle.HiltViewModel
 import eu.haintech.hearbook.model.Book
 import eu.haintech.hearbook.model.BookRepository
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn
+import javax.inject.Inject
 
-class BookListViewModel(
+@HiltViewModel
+class BookListViewModel @Inject constructor(
     private val repository: BookRepository
 ) : ViewModel() {
 
@@ -18,14 +20,4 @@ class BookListViewModel(
         started = SharingStarted.WhileSubscribed(5000),
         initialValue = emptyList()
     )
-
-    class Factory(private val repository: BookRepository) : ViewModelProvider.Factory {
-        @Suppress("UNCHECKED_CAST")
-        override fun <T : ViewModel> create(modelClass: Class<T>): T {
-            if (modelClass.isAssignableFrom(BookListViewModel::class.java)) {
-                return BookListViewModel(repository) as T
-            }
-            throw IllegalArgumentException("Unknown ViewModel class")
-        }
-    }
 } 
