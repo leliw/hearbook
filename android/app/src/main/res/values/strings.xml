@@ -30,4 +30,8 @@
     <string name="no_pages_found">Nie znaleziono stron</string>
     <string name="page_scan">Skan strony</string>
     <string name="add_page">Dodaj strony</string>
+    <string name="delete_book">Usuń książkę</string>
+    <string name="delete_book_confirmation">Czy na pewno chcesz usunąć książkę \"%1$s\"?</string>
+    <string name="delete">Usuń</string>
+    <string name="cancel">Anuluj</string>
 </resources>

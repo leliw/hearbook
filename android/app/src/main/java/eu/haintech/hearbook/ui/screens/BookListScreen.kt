@@ -19,6 +19,8 @@ import eu.haintech.hearbook.R
 import eu.haintech.hearbook.model.Book
 import eu.haintech.hearbook.model.BookStatus
 import eu.haintech.hearbook.ui.viewmodel.BookListViewModel
+import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.combinedClickable
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -28,6 +30,7 @@ fun BookListScreen(
     viewModel: BookListViewModel = viewModel()
 ) {
     val books by viewModel.books.collectAsState()
+    var bookToDelete by remember { mutableStateOf<Book?>(null) }
 
     Scaffold(
         topBar = {
@@ -70,9 +73,34 @@ fun BookListScreen(
             BookGrid(
                 books = books,
                 onBookClick = onBookClick,
+                onLongPress = { book -> bookToDelete = book },
                 modifier = Modifier.padding(paddingValues)
             )
         }
+    }
+
+    // Dialog potwierdzenia usunięcia
+    bookToDelete?.let { book ->
+        AlertDialog(
+            onDismissRequest = { bookToDelete = null },
+            title = { Text(stringResource(R.string.delete_book)) },
+            text = { Text(stringResource(R.string.delete_book_confirmation, book.title)) },
+            confirmButton = {
+                TextButton(
+                    onClick = {
+                        viewModel.deleteBook(book)
+                        bookToDelete = null
+                    }
+                ) {
+                    Text(stringResource(R.string.delete))
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { bookToDelete = null }) {
+                    Text(stringResource(R.string.cancel))
+                }
+            }
+        )
     }
 }
 
@@ -93,11 +121,12 @@ private fun EmptyBookList(paddingValues: PaddingValues) {
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
 @Composable
 private fun BookGrid(
     books: List<Book>,
     onBookClick: (Book) -> Unit,
+    onLongPress: (Book) -> Unit,
     modifier: Modifier = Modifier
 ) {
     LazyVerticalGrid(
@@ -114,47 +143,56 @@ private fun BookGrid(
                     .fillMaxWidth()
                     .aspectRatio(0.75f),
             ) {
-                Column(
+                Box(
                     modifier = Modifier
                         .fillMaxSize()
-                        .padding(16.dp),
-                    verticalArrangement = Arrangement.spacedBy(8.dp)
+                        .combinedClickable(
+                            onClick = { onBookClick(book) },
+                            onLongClick = { onLongPress(book) }
+                        )
                 ) {
-                    Icon(
-                        imageVector = Icons.Default.Book,
-                        contentDescription = null,
+                    Column(
                         modifier = Modifier
-                            .size(48.dp)
-                            .align(Alignment.CenterHorizontally)
-                    )
-                    Text(
-                        text = book.title,
-                        style = MaterialTheme.typography.titleLarge,
-                        textAlign = TextAlign.Center,
-                        modifier = Modifier.fillMaxWidth()
-                    )
-                    Text(
-                        text = when (book.status) {
-                            BookStatus.SCANNING -> stringResource(R.string.status_scanning)
-                            BookStatus.PROCESSING -> stringResource(R.string.status_processing)
-                            BookStatus.READY_TO_READ -> stringResource(R.string.status_ready)
-                        },
-                        style = MaterialTheme.typography.bodyLarge,
-                        textAlign = TextAlign.Center,
-                        modifier = Modifier.fillMaxWidth()
-                    )
-                    if (book.status == BookStatus.READY_TO_READ && book.pageCount > 0) {
+                            .fillMaxSize()
+                            .padding(16.dp),
+                        verticalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.Book,
+                            contentDescription = null,
+                            modifier = Modifier
+                                .size(48.dp)
+                                .align(Alignment.CenterHorizontally)
+                        )
                         Text(
-                            text = stringResource(
-                                R.string.reading_progress,
-                                book.currentPage,
-                                book.pageCount,
-                                (book.readingProgress * 100).toInt()
-                            ),
+                            text = book.title,
+                            style = MaterialTheme.typography.titleLarge,
+                            textAlign = TextAlign.Center,
+                            modifier = Modifier.fillMaxWidth()
+                        )
+                        Text(
+                            text = when (book.status) {
+                                BookStatus.SCANNING -> stringResource(R.string.status_scanning)
+                                BookStatus.PROCESSING -> stringResource(R.string.status_processing)
+                                BookStatus.READY_TO_READ -> stringResource(R.string.status_ready)
+                            },
                             style = MaterialTheme.typography.bodyLarge,
                             textAlign = TextAlign.Center,
                             modifier = Modifier.fillMaxWidth()
                         )
+                        if (book.status == BookStatus.READY_TO_READ && book.pageCount > 0) {
+                            Text(
+                                text = stringResource(
+                                    R.string.reading_progress,
+                                    book.currentPage,
+                                    book.pageCount,
+                                    (book.readingProgress * 100).toInt()
+                                ),
+                                style = MaterialTheme.typography.bodyLarge,
+                                textAlign = TextAlign.Center,
+                                modifier = Modifier.fillMaxWidth()
+                            )
+                        }
                     }
                 }
             }

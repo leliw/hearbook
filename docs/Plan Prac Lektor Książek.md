@@ -82,7 +82,7 @@ Stworzenie aplikacji Android umożliwiającej osobom ze słabym wzrokiem skanowa
   - Implementacja robienia zdjęć
   - Zapisywanie zdjęć w pamięci lokalnej
   - Grupowanie zdjęć w "książki"
-- [ ] **Podstawowe zarządzanie danymi lokalnych**
+- [X] **Podstawowe zarządzanie danymi lokalnych**
   - Konfiguracja SQLite
   - Modele danych (Book, Page)
   - CRUD operacje dla książek

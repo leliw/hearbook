@@ -4,7 +4,7 @@
     <selectionStates>
       <SelectionState runConfigName="HearBook.app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-06-01T08:41:14.204792099Z">
+        <DropdownSelection timestamp="2025-06-01T09:16:36.236901224Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="PhysicalDevice" identifier="serial=ZY22GZZTCG" />
