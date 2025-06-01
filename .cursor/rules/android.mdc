@@ -1,7 +1,7 @@
 ---
 description: 
 globs: 
-alwaysApply: false
+alwaysApply: true
 ---
 1. Always read `README.md` file at the beginning of task.
 2. Update `README.md` and `CHANGELOG.md` files at the end of task if it is nessary.

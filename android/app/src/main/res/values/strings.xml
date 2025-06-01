@@ -29,4 +29,5 @@
     <string name="view_scans">Pokaż skany</string>
     <string name="no_pages_found">Nie znaleziono stron</string>
     <string name="page_scan">Skan strony</string>
+    <string name="add_page">Dodaj strony</string>
 </resources>

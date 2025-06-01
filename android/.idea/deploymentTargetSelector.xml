@@ -4,10 +4,10 @@
     <selectionStates>
       <SelectionState runConfigName="HearBook.app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-06-01T08:19:04.436189445Z">
+        <DropdownSelection timestamp="2025-06-01T08:41:14.204792099Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=/home/marcin/.android/avd/Medium_Phone.avd" />
+              <DeviceId pluginId="PhysicalDevice" identifier="serial=ZY22GZZTCG" />
             </handle>
           </Target>
         </DropdownSelection>
